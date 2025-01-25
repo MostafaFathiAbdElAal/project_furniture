@@ -7,6 +7,7 @@ import "./globals.css";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <meta name="google-site-verification" content="tvthiMQUDUHEE_pj-AKgRE17Qazr3dN8LALyg2MHU4E" />
       <body>
         {<Navbar />}
         <a tabIndex={0} href="https://api.whatsapp.com/send/?phone=966508137522&text&app_absent=0" target="_blank" className="z-50 w-10 h-10 sm:w-12 sm:h-12 bg-[#075E54] bg-opacity-85 hover:bg-opacity-100 transition-colors duration-300 fixed bottom-5 right-5 flex justify-center items-center rounded-full">
