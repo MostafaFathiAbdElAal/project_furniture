@@ -9,6 +9,7 @@ import TypingAnimation from "@/components/TypingAnimation/TypingAnimation"
 export const metadata = {
   title: "الرئيسية",
   description: "مرحبًا بك في شركة التميز العفش ، وجهتك الموثوقة لخدمات نقل العفش داخل وخارج الرياض. نقدم حلولًا متكاملة تشمل النقل، الفك، التركيب، التغليف، وفك وتركيب مكيفات السبلت. نلتزم بتقديم أفضل جودة بأيدي فريق محترف وبأسعار تنافسية",
+  keywords: ["نقل عفش", "نقل الأثاث", "أفضل شرك لنقل العفش", "نقل الأثاث بالرياض", "شركة مضمونة لنقل العفش"]
 };
 export default function Home() {
   return <>
@@ -25,37 +26,40 @@ export default function Home() {
         <div className="col-span-12 md:col-span-5 self-center justify-self-center select-none">
           <div className="relative hidden sm:block">
 
-            <div className="max-h-72 max-w-72 relative rounded-lg overflow-hidden after:bg-black after:bg-opacity-20 after:absolute after:top-0 after:bottom-0 after:w-full">
+            <figure className="max-h-72 max-w-72 relative rounded-lg overflow-hidden after:bg-black after:bg-opacity-20 after:absolute after:top-0 after:bottom-0 after:w-full">
               <Image src={image1} className="w-full h-full object-cover" alt="نقل الأثاث" loading="lazy" />
 
-            </div>
-            <div className="absolute p-3 top-10 -right-16 bg-[#fcfdff] rounded-md grid grid-cols-12 items-center gap-2">
+            </figure>
+            <article className="absolute p-3 top-10 -right-16 bg-[#fcfdff] rounded-md grid grid-cols-12 items-center gap-2">
               <span className="col-span-3 text-xl text-[#68ccea]">
                 10
               </span>
               <p className="col-span-9 text-sm ">سنوات<br /> من الخبرة</p>
 
-            </div>
-            <div className="absolute p-3 bottom-10 -left-16 bg-[#fcfdff] rounded-md grid grid-cols-12 items-center gap-2">
+
+            </article>
+
+            <article className="absolute p-3 bottom-10 -left-16 bg-[#fcfdff] rounded-md grid grid-cols-12 items-center gap-2">
               <span className="col-span-3 text-xl text-[#e76777]">
                 10
               </span>
               <p className="col-span-9 text-sm ">سنوات<br /> من الإبداع</p>
-
-            </div>
+            </article>
           </div>
 
         </div>
       </div>
-      <div className="absolute top-0 bottom-0 w-full flex flex-col justify-center select-none items-center after:bg-black after:bg-opacity-60 after:absolute after:top-0 after:bottom-0 after:w-full  ">
+      <figure className="absolute top-0 bottom-0 w-full flex flex-col justify-center select-none items-center after:bg-black after:bg-opacity-60 after:absolute after:top-0 after:bottom-0 after:w-full  ">
         <Image src={homeBackground} className="w-full h-full object-cover object-center " loading="lazy" alt="أثاث رائع" />
-      </div>
+      </figure>
     </section>
     <section className="bg-[#ededed] rounded-md p-5 font-cairo font-bold text-lg sm:text-xl md:text-xl">
       <div className="shadow-2xl p-3 md:p-5 ">
-        <h2 className="after:block after:w-[40%] after:mx-auto after:translate-x-3 after:h-1 after:bg-[#0078ff] after:mt-1 w-fit font-bold text-2xl sm:text-4xl xl:text-5xl text-center font-Poppins mb-4 mx-auto">
-          لماذا نحن ؟
-        </h2>
+        <header>
+          <h2 className="after:block after:w-[40%] after:mx-auto after:translate-x-3 after:h-1 after:bg-[#0078ff] after:mt-1 w-fit font-bold text-2xl sm:text-4xl xl:text-5xl text-center font-Poppins mb-4 mx-auto">
+            لماذا نحن ؟
+          </h2>
+        </header>
 
 
         <div className="pt-5 px-10">
@@ -64,9 +68,9 @@ export default function Home() {
               <Card sx={{ maxWidth: 360 }}>
                 <CardActionArea>
                   <CardMedia height="140">
-                    <div className="w-full">
+                    <figure className="w-full">
                       <Image src={image2} alt="الجدة في العمل" />
-                    </div>
+                    </figure>
                   </CardMedia>
                   <CardContent>
                     <Typography gutterBottom sx={{ textAlign: "center", fontFamily: "Cairo Variable , sans-serif", fontWeight: "700", fontSize: "21px" }} variant="h3" component="div">
@@ -83,9 +87,9 @@ export default function Home() {
               <Card sx={{ maxWidth: 360 }} >
                 <CardActionArea>
                   <CardMedia height="140">
-                    <div className="w-full">
+                    <figure className="w-full">
                       <Image src={image3} alt="مستوى الخدمة" />
-                    </div>
+                    </figure>
                   </CardMedia>
                   <CardContent>
                     <Typography gutterBottom sx={{ textAlign: "center", fontFamily: "Cairo Variable , sans-serif", fontWeight: "700", fontSize: "21px" }} variant="h3" component="div">
@@ -102,9 +106,9 @@ export default function Home() {
               <Card sx={{ maxWidth: 360 }}>
                 <CardActionArea>
                   <CardMedia height="140">
-                    <div className="w-full">
+                    <figure className="w-full">
                       <Image src={image4} alt="فريقنا" />
-                    </div>
+                    </figure>
                   </CardMedia>
                   <CardContent>
                     <Typography gutterBottom sx={{ textAlign: "center", fontFamily: "Cairo Variable , sans-serif", fontWeight: "700", fontSize: "21px" }} variant="h3" component="div">

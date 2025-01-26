@@ -64,7 +64,7 @@ export default function Navbar() {
                     bar.current.classList.contains("active") ? toggleClass() : null
                     scrollToTop(0)
                 }}>
-                    <Link className={`relative font-bold font-cairo text-lg rounded-e-full rounded-s-full px-3 hover:bg-[rgba(246,247,249,0.13)] hover:before:w-full before:transition-[width] before:duration-300 
+                    <Link tabIndex={1} className={`relative font-bold font-cairo text-lg rounded-e-full rounded-s-full px-3 hover:bg-[rgba(246,247,249,0.13)] hover:before:w-full before:transition-[width] before:duration-300 
                             before:absolute before:left-0 before:-bottom-1 before:h-[2px] before:bg-Success ${current === "/" ? "before:w-full bg-[rgba(88,175,223,.1)] text-[rgb(88,196,220)]" : "before:w-0 text-white"}`} href={"/"}>
                         الرئيسية
                     </Link>

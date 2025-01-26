@@ -17,7 +17,7 @@ export default function NumberToClipboard() {
         <p onClick={() => {
             location.href = "https://api.whatsapp.com/send/?phone=966508137522&text&app_absent=0"
         }} className="w-full cursor-pointer bg-white pl-1 py-1 h-full flex items-center justify-end text-left text-[#111010] text-sm" >966508137522+</p>
-        <i role="button" onClick={(e) => {
+        <i tabIndex={2} role="button" onClick={(e) => {
             copyToClipboard(e)
         }} className="fa-regular fa-clipboard absolute right-0 w-8 flex items-center justify-center top-0 bottom-0 bg-green-500"></i>
     </>

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://E%3A/mostafa/FinalProject/project_furniture/src/app/loading.jsx"],"sourcesContent":["\"use client\"\r\nexport default function loading() {\r\n    return <>\r\n        <section aria-hidden={true}>\r\n            <div className=\"fixed pt-20 top-0 bottom-0 left-0 right-0 bg-black bg-opacity-70 z-30 flex items-center justify-center\">\r\n                <span className=\"loaderBase text-white text-3xl font-cairo font-bold\"></span>\r\n            </div>\r\n        </section>\r\n    </>\r\n}"],"names":[],"mappings":";;;;AAAA;;AACe,SAAS;IACpB,qBAAO;kBACH,cAAA,8OAAC;YAAQ,eAAa;sBAClB,cAAA,8OAAC;gBAAI,WAAU;0BACX,cAAA,8OAAC;oBAAK,WAAU;;;;;;;;;;;;;;;;;AAIhC"}},
+    {"offset": {"line": 38, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

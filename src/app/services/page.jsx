@@ -20,10 +20,10 @@ export default function services() {
             <div className="grid grid-cols-12 items-start gap-5 px-3 sm:px-5" >
                 <div className="bg-white col-span-12 overflow-hidden sm:col-span-6 lg:col-span-4  relative rounded-md border border-[#d2d2d2] shadow-sm">
                     <div tabIndex={3} className="card ">
-                        <div className="h-80">
+                        <figure className="h-80">
                             <Image src={imageService1} className="w-full h-full object-cover" alt="نقل الأثاث" />
-                        </div>
-                        <div className="card-body min-h-52 font-Poppins font-bold">
+                        </figure>
+                        <section className="card-body min-h-52 font-Poppins font-bold">
                             <header className="px-5 ">
                                 <h4 className=" w-fit bg-[#0078ff] absolute left-1/2 translate-x-[-50%] translate-y-[-60%] text-white px-7 py-2  text-xl rounded text-nowrap text-center">النقل</h4>
                                 <h5 className="pt-5 text-3xl text-center">
@@ -35,7 +35,7 @@ export default function services() {
                                     نقدم لك خدمة نقل عفش آمنة وسريعة داخل وخارج الرياض باستخدام شاحنات مجهزة بمعدات حديثة لضمان سلامة الأثاث. فريقنا ملتزم بالحفاظ على أثاثك من أي ضرر أثناء التحميل والتنزيل.
                                 </p>
                             </article>
-                        </div>
+                        </section>
                         <article className="font-Poppins font-bold ">
                             <Accordion slotProps={{ heading: { component: 'h3' } }}>
                                 <AccordionSummary tabIndex={3} className="text-lg font-cairo" expandIcon={<ExpandMoreOutlined />}
@@ -93,10 +93,10 @@ export default function services() {
                 </div>
                 <div className="bg-white overflow-hidden col-span-12 sm:col-span-6 lg:col-span-4  relative rounded-md border border-[#d2d2d2] shadow-sm">
                     <div tabIndex={3} className="card">
-                        <div className="h-80">
+                        <figure className="h-80">
 
                             <Image src={imageService3} className="w-full h-full object-cover" alt="عمال تغليف" />
-                        </div>
+                        </figure>
                         <div className="card-body min-h-52 font-Poppins font-bold">
                             <header className="px-5 ">
                                 <h4 className=" w-fit bg-[#0078ff] absolute left-1/2 translate-x-[-50%] translate-y-[-60%] text-white px-7 py-2  text-xl rounded text-nowrap text-center">التغليق الاَمن</h4>
@@ -130,10 +130,10 @@ export default function services() {
                 </div>
                 <div className="bg-white col-span-12 sm:col-span-6 lg:col-span-4  relative rounded-md border border-[#d2d2d2] shadow-sm">
                     <div tabIndex={3} className="card">
-                        <div className="overflow-hidden h-80">
+                        <figure className="overflow-hidden h-80">
 
                             <Image src={imageService4} className="w-full h-full object-cover" alt="فك وتركيب المكيفات السبلت" />
-                        </div>
+                        </figure>
                         <div className="card-body min-h-52 font-Poppins font-bold">
                             <header className="px-5 ">
                                 <h4 className=" w-fit bg-[#0078ff] absolute left-1/2 translate-x-[-50%] translate-y-[-60%] text-white px-7 py-2 text-nowrap text-center text-xl rounded">فك وتركيب مكيفات السبلت</h4>

@@ -1,1 +1,11 @@
-{"pages":{},"app":{},"appUsingSizeAdjust":false,"pagesUsingSizeAdjust":false}
+{
+  "app": {
+    "[project]/src/app/page": [],
+    "[project]/src/app/requestService/page": [],
+    "[project]/src/app/services/page": [],
+    "[project]/src/app/whoWeAre/page": []
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}
