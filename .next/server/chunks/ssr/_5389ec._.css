@@ -8671,8 +8671,8 @@ img, video {
   height: 50%;
 }
 
-.h-10 {
-  height: 2.5rem;
+.h-12 {
+  height: 3rem;
 }
 
 .h-16 {
@@ -8703,10 +8703,6 @@ img, video {
   height: 100vh;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
 .max-h-72 {
   max-height: 18rem;
 }
@@ -8719,8 +8715,8 @@ img, video {
   min-height: 50vh;
 }
 
-.w-10 {
-  width: 2.5rem;
+.w-12 {
+  width: 3rem;
 }
 
 .w-44 {
@@ -8749,10 +8745,6 @@ img, video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .max-w-40 {
@@ -9448,7 +9440,6 @@ html, body {
 }
 
 body, html, :root {
-  direction: rtl;
   text-orientation: initial;
   writing-mode: initial;
   --colormain: #0078ff;
@@ -9785,16 +9776,8 @@ form textarea::placeholder, form input::placeholder {
     display: block;
   }
 
-  .sm\:h-12 {
-    height: 3rem;
-  }
-
   .sm\:h-9 {
     height: 2.25rem;
-  }
-
-  .sm\:w-12 {
-    width: 3rem;
   }
 
   .sm\:w-3\/4 {

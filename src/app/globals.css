@@ -32,7 +32,6 @@ body {
 body,
 html,
 :root {
-  direction: rtl;
   text-orientation: initial;
   writing-mode: initial;
   --colormain: #0078ff;

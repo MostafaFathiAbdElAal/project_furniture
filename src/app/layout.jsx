@@ -7,9 +7,19 @@ import "./globals.css";
 export const viewport = {
   themeColor: '#2E088FE8',
 }
+const websiteUrl = ""
+export const metadata = {
+  openGraph: {
+    title: "يمكنك متابعة صفحة التميز لنقل العفش على الإنستغرام",
+    description: "استكشف ما لدينا على صفحتنا فى الإسنتغرام وقدم لنا اقتراحات للقيام بها شكرا لكم",
+    type: "website",
+    local: "ar_SA",
+    url: websiteUrl // File env 
+  }
+}
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html dir="rtl" lang="ar">
       <meta name="google-site-verification" content="tvthiMQUDUHEE_pj-AKgRE17Qazr3dN8LALyg2MHU4E" />
       <body>
 
