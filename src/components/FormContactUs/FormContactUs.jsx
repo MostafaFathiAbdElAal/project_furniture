@@ -68,7 +68,7 @@ export default function FormContactUs() {
                         Formik.handleChange(e)
                         lengthTextarea(e)
                     }} onBlur={Formik.handleBlur}></textarea>
-                    <span className="absolute z-10 bottom-2 text-green-700 right-2">{countDown}</span>
+                    <span className="absolute z-10 bottom-2 dark:text-cyan-500 text-green-500 right-2">{countDown}</span>
                     <span className="absolute z-10 top-8 text-white left-2"><LocalOfferOutlinedIcon/></span>
                 
                 </div>
@@ -76,7 +76,7 @@ export default function FormContactUs() {
             </div>
             <button onClick={() => {
                 formIsEmpty()
-            }} className="bg-green-700 hover:bg-green-800 transition-colors duration-300 ease-in-out text-white py-2 px-4 mt-4  font-cairo font-bold text-lg" type={isValid()}>أحجز الان</button>
+            }} className="border-2 text-white py-2 px-4 rounded-md mt-4  font-cairo font-bold text-lg bg-green-500 border-green-500 dark:bg-cyan-500 dark:border-cyan-500 hover:bg-opacity-0 dark:hover:bg-opacity-0 hover:text-green-500 dark:hover:text-cyan-500 transition-colors duration-200" type={isValid()}>أحجز الان</button>
         </form>
     </fieldset>
 

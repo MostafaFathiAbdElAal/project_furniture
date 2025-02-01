@@ -6,7 +6,7 @@ export const metadata = {
 export default function notFound() {
     return <>
         <section
-            className="text-white px-3 sm:px-0 h-screen font-cairo w-full flex flex-col justify-start pt-40 items-center bg-[#080c14] bg-opacity-90">
+            className="dark:text-white text-black px-3 sm:px-0 h-screen font-cairo w-full flex flex-col justify-start pt-40 items-center dark:bg-[#080c14] bg-opacity-90">
             <Image className="max-w-40 select-none mb-4" src={imgWarning} alt="مسار خاطئ" />
             <header>
                 <h2 className="text-3xl sm:text-4xl font-bold text-center">

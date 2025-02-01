@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://E%3A/mostafa/FinalProject/project_furniture/src/components/TypingAnimation/TypingAnimation.jsx"],"sourcesContent":["'use client'\r\nimport { TypeAnimation } from \"react-type-animation\";\r\nexport default function TypingAnimation() {\r\n    return <>\r\n        <TypeAnimation\r\n            sequence={[\r\n              'وجهتك الموثوقة لخدمات نقل العفش داخل وخارج الرياض. نقدم حلولًا متكاملة تشمل النقل ، الفك، التركيب ، التغليف ، وفك وتركيب مكيفات السبلت. نلتزم بتقديم أفضل جودة بأيدي فريق محترف وبأسعار تنافسية',\r\n            ]}\r\n\r\n            role=\"article\" wrapper=\"div\" speed={45} className=\"after:text-white after:px-[2px] text-[#d6e6ff] font-bold text-center text-sm sm:text-lg md:text-right px-3\"\r\n          />\r\n    </>\r\n}"],"names":[],"mappings":";;;;AACA;AADA;;;AAEe,SAAS;IACpB,qBAAO;kBACH,cAAA,6LAAC,2KAAA,CAAA,gBAAa;YACV,UAAU;gBACR;aACD;YAED,MAAK;YAAU,SAAQ;YAAM,OAAO;YAAI,WAAU;;;;;;;AAG9D;KAVwB"}},
-    {"offset": {"line": 38, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

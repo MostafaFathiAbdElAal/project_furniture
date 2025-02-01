@@ -1,14 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
   direction: rtl;
-  background-color: #f1f1f1
+
 }
+
 /* Navbar Responsive */
 @media(max-width:1024px) {
   #Barnav.active~ul {
-    height: 220px;
+    @apply h-60
   }
 
   #Barnav.active {
@@ -17,10 +19,11 @@ body {
 
   #Basenav {
     height: 0px;
-    transition: height 250ms ease-in-out;
+    transition: height 200ms ease-in-out;
   }
-  
+
 }
+
 
 html,
 body {
@@ -28,14 +31,10 @@ body {
   scroll-behavior: smooth;
 }
 
-/*! My root */
 body,
 html,
 :root {
-  text-orientation: initial;
   writing-mode: initial;
-  --colormain: #0078ff;
-  --color2: #0078ff;
 }
 
 form textarea,
@@ -51,7 +50,7 @@ form input::placeholder {
 
 @layer components {
   .backgroundmain1 {
-    background-color: var(--color2);
+    background-color: #0078ff;
   }
 }
 

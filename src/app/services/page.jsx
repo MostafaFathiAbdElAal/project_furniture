@@ -7,44 +7,44 @@ import imageService3 from "@/images/images6.jpg";
 import imageService2 from "@/images/images7.jpg";
 export const metadata = {
     title: "الخدمات",
-    description: "نقدم لك خدمة نقل عفش آمنة وسريعة داخل وخارج الرياض باستخدام شاحنات مجهزة بمعدات حديثة لضمان سلامة الأثاث. فريقنا ملتزم بالحفاظ على أثاثك من أي ضرر أثناء التحميل والتنزيل.",
+    description: "نقدم لك خدمة نقل عفش آمنة وسريعة مع شركة التمييز لنقل العفش داخل وخارج الرياض باستخدام شاحنات مجهزة بمعدات حديثة لضمان سلامة الأثاث.",
 };
 export default function services() {
     return <>
-        <section className="pt-3 sm:pt-7 md:pt-10 pb-5 service">
+        <section className="dark:bg-[#080c14] bg-[#ededed] pt-3 sm:pt-7 md:pt-10 pb-5 service">
             <header>
-                <h2 className="after:block after:w-[40%] after:mx-auto after:h-1 after:bg-[#0078ff] after:mt-1 w-fit font-bold text-2xl sm:text-4xl xl:text-5xl text-center font-Poppins mb-4 mx-auto">
+                <h2 className="dark:text-white text-black after:block after:w-[40%] after:mx-auto after:h-[3px] after:bg-[#0078ff] dark:after:bg-[#0d9488] after:mt-2 w-fit font-bold text-2xl sm:text-4xl xl:text-5xl text-center font-Poppins mb-4 mx-auto">
                     خدماتنا المتكاملة لنقل الأثاث في الرياض
                 </h2>
             </header>
-            <div className="grid grid-cols-12 items-start gap-5 px-3 sm:px-5" >
-                <div className="bg-white col-span-12 overflow-hidden sm:col-span-6 lg:col-span-4  relative rounded-md border border-[#d2d2d2] shadow-sm">
+            <section className="grid grid-cols-12 items-start gap-5 px-3 sm:px-5" >
+                <div className="dark:bg-[#1e293b] bg-white col-span-12 overflow-hidden sm:col-span-6 lg:col-span-4 group relative rounded-md border dark:border-slate-800 border-[#d2d2d2] shadow-sm">
                     <div tabIndex={3} className="card ">
-                        <figure className="h-80">
-                            <Image src={imageService1} className="w-full h-full object-cover" alt="نقل الأثاث" />
+                        <figure className="h-80 overflow-hidden">
+                            <Image loading="lazy" src={imageService1} className="w-full h-full group-hover:scale-110 transition-transform duration-700 object-cover" alt="نقل الأثاث" />
                         </figure>
-                        <section className="card-body min-h-52 font-Poppins font-bold">
+                        <div className="card-body min-h-52 font-Poppins font-bold">
                             <header className="px-5 ">
-                                <h4 className=" w-fit bg-[#0078ff] absolute left-1/2 translate-x-[-50%] translate-y-[-60%] text-white px-7 py-2  text-xl rounded text-nowrap text-center">النقل</h4>
-                                <h5 className="pt-5 text-3xl text-center">
+                                <h4 className="w-fit bg-gradient-to-r from-blue-400 to-blue-500 dark:bg-gradient-to-r dark:from-cyan-400 dark:to-sky-500 dark:text-slate-50 absolute left-1/2 translate-x-[-50%] translate-y-[-60%] text-white px-7 py-2  text-xl rounded text-nowrap text-center">النقل</h4>
+                                <h5 className="pt-5 dark:text-white text-black text-3xl text-center">
                                     خدمة نقل العفش
                                 </h5>
                             </header>
                             <article className="px-5 py-2">
-                                <p className="card-text text-center sm:text-right font-semibold pb-2 text-lg font-cairo  leading-8">
+                                <p className="card-text dark:text-slate-200 text-black text-center sm:text-right font-semibold pb-2 text-lg font-cairo  leading-8">
                                     نقدم لك خدمة نقل عفش آمنة وسريعة داخل وخارج الرياض باستخدام شاحنات مجهزة بمعدات حديثة لضمان سلامة الأثاث. فريقنا ملتزم بالحفاظ على أثاثك من أي ضرر أثناء التحميل والتنزيل.
                                 </p>
                             </article>
-                        </section>
-                        <article className="font-Poppins font-bold ">
-                            <Accordion slotProps={{ heading: { component: 'h3' } }}>
-                                <AccordionSummary tabIndex={3} className="text-lg font-cairo" expandIcon={<ExpandMoreOutlined />}
+                        </div>
+                        <article className="font-Poppins font-bold border-t border-[#d2d2d2] border-solid">
+                            <Accordion slotProps={{ heading: { component: 'div' } }} className="dark:bg-[#151a24]">
+                                <AccordionSummary tabIndex={3} className="text-lg font-cairo dark:text-white" expandIcon={<div aria-label="زر سهم لإظهار العناصر الخفية"> <ExpandMoreOutlined className="dark:text-white"/></div>}
                                     aria-controls="panel1-content"
-                                    id="panel1-header" style={{ borderBlock: "1px solid #d2d2d2" }}>
+                                    id="panel1-header" >
                                     مميزات
                                 </AccordionSummary>
                                 <AccordionDetails>
-                                    <ol className="text-xl flex flex-col gap-1">
+                                    <ol className="text-lg dark:text-slate-200 text-black flex flex-col gap-1">
                                         <li className="fa-solid fa-dot-circle-o grid grid-cols-10"><i className="fa-solid fa-arrow-alt-circle-left text-green-500 col-span-1"></i> <span className="col-span-9">شاحنات حديثة ومجهزة بالكامل.</span></li>
                                         <li className="fa-solid fa-dot-circle-o grid grid-cols-10"><i className="fa-solid fa-arrow-alt-circle-left text-green-500 col-span-1"></i> <span className="col-span-9">فريق عمل مدرب على النقل الآمن.</span></li>
                                         <li className="fa-solid fa-dot-circle-o grid grid-cols-10"><i className="fa-solid fa-arrow-alt-circle-left text-green-500 col-span-1"></i> <span className="col-span-9">الالتزام بالمواعيد المحددة.</span></li>
@@ -54,34 +54,34 @@ export default function services() {
                         </article>
                     </div>
                 </div>
-                <div className="bg-white overflow-hidden col-span-12 sm:col-span-6 lg:col-span-4  relative rounded-md border border-[#d2d2d2] shadow-sm">
+                <div className="dark:bg-[#1e293b] bg-white overflow-hidden col-span-12 sm:col-span-6 lg:col-span-4 group relative rounded-md border dark:border-slate-800 border-[#d2d2d2] shadow-sm">
                     <div tabIndex={3} className="card">
-                        <div className="h-80">
-                            <Image src={imageService2} className="w-full h-full" alt="فك وتركيب الأثاث" />
+                        <div className="h-80 overflow-hidden">
+                            <Image loading="lazy" src={imageService2} className="w-full h-full group-hover:scale-110 transition-transform duration-700 object-cover" alt="فك وتركيب الأثاث" />
                         </div>
                         <div className="card-body min-h-52 font-Poppins font-bold">
                             <header className="px-5 ">
-                                <h4 className=" w-fit bg-[#0078ff] absolute left-1/2 translate-x-[-50%] translate-y-[-60%] text-white px-7 py-2  text-xl rounded text-nowrap text-center">فك وتركيب</h4>
-                                <h5 className="pt-5 text-3xl text-center">
+                                <h4 className=" w-fit bg-gradient-to-r from-blue-400 to-blue-500 dark:bg-gradient-to-r dark:from-cyan-400 dark:to-sky-500 dark:text-slate-50 absolute left-1/2 translate-x-[-50%] translate-y-[-60%] text-white px-7 py-2  text-xl rounded text-nowrap text-center">فك وتركيب</h4>
+                                <h5 className="pt-5 dark:text-white text-black text-3xl text-center">
                                     خدمة فك وتركيب الأثاث
                                 </h5>
                             </header>
                             <article className="px-5 py-2">
-                                <p className="card-text text-center sm:text-right font-semibold pb-2 text-lg font-cairo ">
+                                <p className="card-text dark:text-slate-200 text-black text-center sm:text-right font-semibold pb-2 text-lg font-cairo ">
                                     فريق متخصص في فك وتركيب جميع أنواع الأثاث بما في ذلك الأثاث المنزلي والمكتبي بخبرة ودقة عالية، مع استخدام الأدوات المناسبة لضمان سلامة قطع الأثاث.
 
                                 </p>
                             </article>
                         </div>
-                        <article className="font-Poppins font-bold ">
-                            <Accordion slotProps={{ heading: { component: 'h3' } }}>
-                                <AccordionSummary tabIndex={3} className="text-lg font-cairo" expandIcon={<ExpandMoreOutlined />}
+                        <article className="font-Poppins font-bold border-t border-[#d2d2d2] border-solid">
+                            <Accordion slotProps={{ heading: { component: 'div' } }} className="dark:bg-[#151a24]">
+                                <AccordionSummary tabIndex={3} className="text-lg font-cairo dark:text-white" expandIcon={<div aria-label="زر سهم لإظهار العناصر الخفية"> <ExpandMoreOutlined className="dark:text-white"/></div>}
                                     aria-controls="panel1-content"
-                                    id="panel1-header" style={{ borderBlock: "1px solid #d2d2d2" }}>
+                                    id="panel1-header" >
                                     مميزات
                                 </AccordionSummary>
                                 <AccordionDetails>
-                                    <ol className="text-xl flex flex-col gap-1">
+                                    <ol className="text-lg dark:text-slate-200 text-black flex flex-col gap-1">
                                         <li className="fa-solid fa-dot-circle-o grid grid-cols-10"><i className="fa-solid fa-arrow-alt-circle-left text-green-500  col-span-1"></i> <span className="col-span-9">فنيون محترفون بأدق التفاصيل.</span></li>
                                         <li className="fa-solid fa-dot-circle-o grid grid-cols-10"><i className="fa-solid fa-arrow-alt-circle-left text-green-500  col-span-1"></i> <span className="col-span-9">أدوات ومعدات حديثة للفك والتركيب.</span></li>
                                         <li className="fa-solid fa-dot-circle-o grid grid-cols-10"><i className="fa-solid fa-arrow-alt-circle-left text-green-500  col-span-1"></i> <span className="col-span-9">ضمان عدم حدوث أي تلف أثناء التركيب.</span></li>
@@ -91,34 +91,34 @@ export default function services() {
                         </article>
                     </div>
                 </div>
-                <div className="bg-white overflow-hidden col-span-12 sm:col-span-6 lg:col-span-4  relative rounded-md border border-[#d2d2d2] shadow-sm">
+                <div className="bg-white dark:bg-[#1e293b] overflow-hidden col-span-12 sm:col-span-6 lg:col-span-4 group relative rounded-md border dark:border-slate-800 border-[#d2d2d2] shadow-sm">
                     <div tabIndex={3} className="card">
-                        <figure className="h-80">
+                        <figure className="h-80 overflow-hidden">
 
-                            <Image src={imageService3} className="w-full h-full object-cover" alt="عمال تغليف" />
+                            <Image loading="lazy" src={imageService3} className="w-full h-full group-hover:scale-110 transition-transform duration-700 object-cover" alt="عمال تغليف" />
                         </figure>
                         <div className="card-body min-h-52 font-Poppins font-bold">
-                            <header className="px-5 ">
-                                <h4 className=" w-fit bg-[#0078ff] absolute left-1/2 translate-x-[-50%] translate-y-[-60%] text-white px-7 py-2  text-xl rounded text-nowrap text-center">التغليق الاَمن</h4>
-                                <h5 className="pt-5 text-3xl text-center">
+                            <header className="px-5">
+                                <h4 className="w-fit bg-gradient-to-r from-blue-400 to-blue-500 dark:bg-gradient-to-r dark:from-cyan-400 dark:to-sky-500 dark:text-slate-50 absolute left-1/2 translate-x-[-50%] translate-y-[-60%] text-white px-7 py-2  text-xl rounded text-nowrap text-center">التغليق الاَمن</h4>
+                                <h5 className="pt-5 dark:text-white text-black text-3xl text-center">
                                     خدمة التغليف الآمن
                                 </h5>
                             </header>
                             <article className="px-5 py-2">
-                                <p className="card-text text-center sm:text-right font-semibold pb-2 text-lg font-cairo ">
+                                <p className="card-text dark:text-slate-200 text-black text-center sm:text-right font-semibold pb-2 text-lg font-cairo ">
                                     نوفر لك خدمة تغليف احترافية باستخدام أفضل المواد مثل الفقاعات الهوائية والكرتون المقوى لتوفير أقصى درجات الحماية لأثاثك أثناء النقل.
                                 </p>
                             </article>
                         </div>
-                        <article className="font-Poppins font-bold ">
-                            <Accordion slotProps={{ heading: { component: 'h3' } }}>
-                                <AccordionSummary tabIndex={3} className="text-lg font-cairo" expandIcon={<ExpandMoreOutlined />}
+                        <article className="font-Poppins font-bold border-t border-[#d2d2d2] border-solid">
+                            <Accordion slotProps={{ heading: { component: 'div' } }} className="dark:bg-[#151a24]">
+                                <AccordionSummary tabIndex={3} className="text-lg font-cairo dark:text-white" expandIcon={<div aria-label="زر سهم لإظهار العناصر الخفية"> <ExpandMoreOutlined className="dark:text-white"/></div>}
                                     aria-controls="panel1-content"
-                                    id="panel1-header" style={{ borderBlock: "1px solid #d2d2d2" }}>
+                                    id="panel1-header" >
                                     مميزات
                                 </AccordionSummary>
                                 <AccordionDetails>
-                                    <ol className="text-xl flex flex-col gap-1">
+                                    <ol className="text-lg flex flex-col gap-1 dark:text-slate-200 text-black">
                                         <li className="fa-solid fa-dot-circle-o grid grid-cols-10"><i className="fa-solid fa-arrow-alt-circle-left text-green-500 col-span-1"></i> <span className="col-span-9">مواد تغليف عالية الجودة.</span></li>
                                         <li className="fa-solid fa-dot-circle-o grid grid-cols-10"><i className="fa-solid fa-arrow-alt-circle-left text-green-500 col-span-1"></i> <span className="col-span-9">تغليف خاص للأجهزة الكهربائية والزجاج.</span></li>
                                         <li className="fa-solid fa-dot-circle-o grid grid-cols-10"><i className="fa-solid fa-arrow-alt-circle-left text-green-500 col-span-1"></i> <span className="col-span-9">تصنيف وفرز الأثاث لضمان سلامته.</span></li>
@@ -128,34 +128,32 @@ export default function services() {
                         </article>
                     </div>
                 </div>
-                <div className="bg-white col-span-12 sm:col-span-6 lg:col-span-4  relative rounded-md border border-[#d2d2d2] shadow-sm">
+                <div className="dark:bg-[#1e293b] bg-white col-span-12 sm:col-span-6 lg:col-span-4 relative group rounded-md border dark:border-slate-800 border-[#d2d2d2]  shadow-sm">
                     <div tabIndex={3} className="card">
-                        <figure className="overflow-hidden h-80">
-
-                            <Image src={imageService4} className="w-full h-full object-cover" alt="فك وتركيب المكيفات السبلت" />
+                        <figure className="h-80 overflow-hidden">
+                            <Image loading="lazy" src={imageService4} className="w-full h-full group-hover:scale-110 transition-transform duration-700 object-cover" alt="فك وتركيب المكيفات السبلت" />
                         </figure>
                         <div className="card-body min-h-52 font-Poppins font-bold">
                             <header className="px-5 ">
-                                <h4 className=" w-fit bg-[#0078ff] absolute left-1/2 translate-x-[-50%] translate-y-[-60%] text-white px-7 py-2 text-nowrap text-center text-xl rounded">فك وتركيب مكيفات السبلت</h4>
-                                <h5 className="pt-5 text-3xl text-center">
+                                <h4 className="w-fit bg-gradient-to-r from-blue-400 to-blue-500 dark:bg-gradient-to-r dark:from-cyan-400 dark:to-sky-500 dark:text-slate-50 absolute left-1/2 translate-x-[-50%] translate-y-[-60%] text-white px-7 py-2 text-nowrap text-center text-xl rounded">فك وتركيب مكيفات السبلت</h4>
+                                <h5 className="pt-5 dark:text-white text-black text-3xl text-center">
                                     خدمة فك وتركيب مكيفات السبلت                            </h5>
                             </header>
                             <article className="px-5 py-2">
-                                <p className="card-text text-center sm:text-right font-semibold pb-2 text-lg font-cairo ">
+                                <p className="card-text dark:text-slate-200 text-black text-center sm:text-right font-semibold pb-2 text-lg font-cairo ">
                                     نوفر خدمة فك وتركيب مكيفات السبلت بجودة عالية من خلال فنيين معتمدين لضمان تشغيل المكيف بأعلى كفاءة بعد النقل.
-
                                 </p>
                             </article>
                         </div>
-                        <article className="font-Poppins font-bold ">
-                            <Accordion slotProps={{ heading: { component: 'h3' } }}>
-                                <AccordionSummary tabIndex={3} className="text-lg font-cairo" expandIcon={<ExpandMoreOutlined />}
+                        <article className="font-Poppins font-bold border-t border-[#d2d2d2] border-solid">
+                            <Accordion slotProps={{ heading: { component: 'div' } }} className="dark:bg-[#151a24]">
+                                <AccordionSummary tabIndex={3} className="text-lg font-cairo dark:text-white" expandIcon={<div aria-label="زر سهم لإظهار العناصر الخفية"> <ExpandMoreOutlined className="dark:text-white" /></div>}
                                     aria-controls="panel1-content"
-                                    id="panel1-header" style={{ borderBlock: "1px solid #d2d2d2" }}>
+                                    id="panel1-header" >
                                     مميزات
                                 </AccordionSummary>
                                 <AccordionDetails>
-                                    <ol className="text-xl   flex flex-col gap-1">
+                                    <ol className="text-lg dark:text-slate-200 flex flex-col gap-1">
                                         <li className="fa-solid fa-dot-circle-o grid grid-cols-10"><i className="fa-solid fa-arrow-alt-circle-left text-green-500 col-span-1"></i> <span className="col-span-9">فنيون معتمدون ومتخصصون.</span></li>
                                         <li className="fa-solid fa-dot-circle-o grid grid-cols-10"><i className="fa-solid fa-arrow-alt-circle-left text-green-500 col-span-1"></i> <span className="col-span-9">استخدام أفضل الأدوات لتفادي أي ضرر.</span></li>
                                         <li className="fa-solid fa-dot-circle-o grid grid-cols-10"><i className="fa-solid fa-arrow-alt-circle-left text-green-500 col-span-1"></i> <span className="col-span-9">إعادة التشغيل وضمان الكفاءة بعد التركيب.</span></li>
@@ -165,7 +163,7 @@ export default function services() {
                         </article>
                     </div>
                 </div>
-            </div>
+            </section>
         </section >
     </>
 }
