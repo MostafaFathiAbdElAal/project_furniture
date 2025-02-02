@@ -35,16 +35,15 @@ export default function Footer() {
                         </article>
                         <ul className="font-Poppins text-xs sm:text-sm  font-bold">
                             <li>
-                                <a href="https://maps.app.goo.gl/QimrsfF8j62Qxf2U6" target="_blank"><p className="flex items-center hover:underline"><span className="me-2 text-center text-green-200 dark:text-cyan-200 text-xl"><LocationOnOutlinedIcon fontSize="inherit" /></span>Riyadh-Saudi Arabia</p> </a>
+                                <a aria-label="موقعنا على الخريطة" href="https://maps.app.goo.gl/QimrsfF8j62Qxf2U6" target="_blank"><p className="flex items-center hover:underline"><span className="me-2 text-center text-green-200 dark:text-cyan-200 text-xl"><LocationOnOutlinedIcon fontSize="inherit" /></span>Riyadh-Saudi Arabia</p> </a>
 
                             </li>
                             <li>
-                            <a href="tel:+966508137522" target="_blank"><p className="flex items-center hover:underline"><span className="me-2 text-center text-green-200 dark:text-cyan-200 text-xl mb-1"><SmartphoneOutlinedIcon  fontSize="inherit"/></span>966508137522+</p></a>
+                                <a aria-label="الاتصال بنا هاتفيا" href="tel:+966508137522" target="_blank"><p className="flex items-center hover:underline"><span className="me-2 text-center text-green-200 dark:text-cyan-200 text-xl mb-1"><SmartphoneOutlinedIcon fontSize="inherit" /></span>966508137522+</p></a>
 
                             </li>
                             <li>
-                                <a href="mailto:tamez.furniture.sa@gmail.com" target="_blank"><p className="flex items-center hover:underline"><span className="me-2 text-center text-green-200 dark:text-cyan-200 text-xl "><EmailOutlinedIcon fontSize="inherit" /></span>tamez.furniture.sa@gmail.com</p></a>
-
+                                <a aria-label="إرسال رسالة لنا على البريد الإلكتروني" href="mailto:tamez.furniture.sa@gmail.com" target="_blank"><p className="flex items-center hover:underline"><span className="me-2 text-center text-green-200 dark:text-cyan-200 text-xl "><EmailOutlinedIcon fontSize="inherit" /></span>tamez.furniture.sa@gmail.com</p></a>
                             </li>
                         </ul>
                         <MapGoogle />
@@ -57,14 +56,14 @@ export default function Footer() {
 
                 <ul className="flex gap-1 text-xl">
                     <li>
-                        <a href="https://www.instagram.com/ltmyzlnql?utm_source=qr&igsh=MTh1eHJ1dzZscXVjdQ==" target="_blank" className="flex items-center justify-center w-7 h-7 group sm:w-9 sm:h-9 rounded-full bg-[#b9b8b8] hover:bg-[#9b9b9b] dark:bg-[#3838389f] dark:hover:bg-[#383838] hover:rotate-6 transition-[color,background,transform] duration-300">
+                        <a aria-label="تابع صفحتنا على الإنستغرام" href="https://www.instagram.com/ltmyzlnql?utm_source=qr&igsh=MTh1eHJ1dzZscXVjdQ==" target="_blank" className="flex items-center justify-center w-7 h-7 group sm:w-9 sm:h-9 rounded-full bg-[#b9b8b8] hover:bg-[#9b9b9b] dark:bg-[#3838389f] dark:hover:bg-[#383838] hover:rotate-6 transition-[color,background,transform] duration-300">
                             <span className=" flex items-center group-hover:scale-110 transition-transform duration-300">
                                 <InstagramIcon fontSize="inherit" />
                             </span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://api.whatsapp.com/send/?phone=966508137522&text&app_absent=0" target="_blank" className="flex items-center justify-center w-7 h-7 group sm:w-9 sm:h-9 rounded-full bg-[#b9b8b8] hover:bg-[#9b9b9b] dark:bg-[#3838389f] dark:hover:bg-[#383838] hover:rotate-6 transition-[color,background,transform] duration-300">
+                        <a aria-label="تواصل معنا على الواتس اب" href="https://api.whatsapp.com/send/?phone=966508137522&text&app_absent=0" target="_blank" className="flex items-center justify-center w-7 h-7 group sm:w-9 sm:h-9 rounded-full bg-[#b9b8b8] hover:bg-[#9b9b9b] dark:bg-[#3838389f] dark:hover:bg-[#383838] hover:rotate-6 transition-[color,background,transform] duration-300">
                             <span className=" flex items-center group-hover:scale-110 transition-transform duration-300">
                                 <WhatsAppIcon fontSize="inherit" />
                             </span>

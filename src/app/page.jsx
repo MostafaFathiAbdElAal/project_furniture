@@ -24,7 +24,7 @@ export default function Home() {
           <div className="relative hidden sm:block">
 
             <figure className="max-h-72 max-w-72 relative rounded-lg overflow-hidden after:bg-black after:bg-opacity-20 after:absolute after:top-0 after:bottom-0 after:w-full">
-              <Image loading="lazy" src={image1} className="w-full h-full object-cover" alt="نقل الأثاث" />
+              <Image src={image1} className="w-full h-full object-cover" alt="نقل الأثاث" />
 
             </figure>
             <article className="absolute p-3 top-10 -right-16 bg-[#fcfdff] dark:bg-[rgb(8,21,49)] dark:text-white rounded-md grid grid-cols-12 items-center gap-2">

@@ -21,6 +21,7 @@ export default function Navbar() {
     // Animation navbar
     useEffect(() => {
         if (navBar.current && ulLinks.current && progressBar.current) {
+        
             window.addEventListener("scroll", () => {
                 if (window.scrollY < 130) {
                     navBar.current.classList.replace("h-16", "h-20")
@@ -34,8 +35,8 @@ export default function Navbar() {
                     progressBar.current.classList.contains("opacity-0") ? progressBar.current.classList.replace("opacity-0", "opacity-100") : null
                 }
                 // progress bar
-                progressBar.current.firstChild.style.width = `${(window.scrollY / (document.documentElement.scrollHeight - 615)) * 100}%`
-            })
+                progressBar.current.firstChild.style.width = `${(window.scrollY / (document.documentElement.scrollHeight - document.documentElement.clientHeight)) * 100}%`
+            },{passive:true})
         }
     }, [navBar, ulLinks, progressBar])
     // Bar toggle 
@@ -52,7 +53,7 @@ export default function Navbar() {
         window.addEventListener("keyup", (e) => {
             if (e.code !== "Escape") return;
             bar.current.classList.contains("active") ? toggleClass() : null
-        })
+        },{passive:true})
     }, [bar])
     return <>
         <nav ref={navBar} className="dark:bg-[#17191c] bg-white dark:text-white text-black select-none py-2 fixed flex items-center top-0 h-20 w-screen  z-[9999] transition-[height] duration-300ms" style={{ boxShadow: "0px 30px 50px rgba(0, 0, 0, 0.05)" }}>

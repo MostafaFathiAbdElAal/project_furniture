@@ -21,7 +21,7 @@ export default function CardsInHome() {
                 <CardActionArea>
                     <CardMedia height="140">
                         <figure className="w-full">
-                            <Image loading="lazy" src={image2} alt="الجدة في العمل" />
+                            <Image decoding="async" loading="lazy" src={image2} alt="الجدة في العمل" />
                         </figure>
                     </CardMedia>
                     <CardContent className="dark:bg-[#111827] dark:text-white ">
@@ -42,7 +42,7 @@ export default function CardsInHome() {
                 <CardActionArea>
                     <CardMedia height="140">
                         <figure className="w-full">
-                            <Image loading="lazy" src={image3} alt="مستوى الخدمة" />
+                            <Image decoding="async" loading="lazy" src={image3} alt="مستوى الخدمة" />
                         </figure>
                     </CardMedia>
                     <CardContent className="dark:bg-[#111827] dark:text-white ">
@@ -63,7 +63,7 @@ export default function CardsInHome() {
                 <CardActionArea>
                     <CardMedia height="140">
                         <figure className="w-full">
-                            <Image loading="lazy" src={image4} alt="فريقنا" />
+                            <Image decoding="async" loading="lazy" src={image4} alt="فريقنا" />
                         </figure>
                     </CardMedia>
                     <CardContent className="dark:bg-[#111827] dark:text-white ">

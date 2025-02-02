@@ -51,7 +51,7 @@ export default function whoWeAre() {
 
                 </section>
                 <div className="col-span-12 select-none flex justify-center">
-                    <a tabIndex={2} href="#footer" className="px-4 py-2 rounded-md flex space-x-2 hover:bg-opacity-0 dark:hover:bg-opacity-0 bg-yellow-500 dark:bg-yellow-300 text-slate-100 dark:text-slate-900 border-2 dark:border-yellow-300 border-yellow-500 hover:text-yellow-500 dark:hover:text-yellow-300 transition-colors duration-200 font-cairo font-bold text-lg">معرفة المزيد</a>
+                    <a aria-label="الذهاب الى صفحة التواصل معنا لمعرفة المزيد" tabIndex={2} href="#footer" className="px-4 py-2 rounded-md flex space-x-2 hover:bg-opacity-0 dark:hover:bg-opacity-0 bg-yellow-500 dark:bg-yellow-300 text-slate-100 dark:text-slate-900 border-2 dark:border-yellow-300 border-yellow-500 hover:text-yellow-500 dark:hover:text-yellow-300 transition-colors duration-200 font-cairo font-bold text-lg">معرفة المزيد</a>
                 </div>
                 <div className="p-10 text-white font-cairo font-bold">
                     <div className="dark:bg-white dark:bg-opacity-25 bg-slate-300 w-fit mx-auto flex gap-2 p-5 rounded-md">
