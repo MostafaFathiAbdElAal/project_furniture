@@ -6,7 +6,6 @@ import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
-import Head from "next/head";
 export const viewport = {
   themeColor: '#2E088FE8',
 }
@@ -16,7 +15,7 @@ export const metadata = {
     description: "استكشف ما لدينا على صفحتنا فى الإسنتغرام وقدم لنا اقتراحات للقيام بها شكرا لكم",
     type: "website",
     local: "ar_SA",
-    url: "https://project-furniture-omega.vercel.app/"
+    url: "https://https://tamez-furniture.site"
   },
   icons: {
     icon: []
