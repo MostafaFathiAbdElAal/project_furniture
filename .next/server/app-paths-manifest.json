@@ -1,9 +1,9 @@
 {
   "/sitemap.xml/route": "app/sitemap.xml/route.js",
   "/robots.txt/route": "app/robots.txt/route.js",
-  "/requestService/page": "app/requestService/page.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js",
   "/whoWeAre/page": "app/whoWeAre/page.js",
+  "/page": "app/page.js",
+  "/requestService/page": "app/requestService/page.js",
   "/services/page": "app/services/page.js"
 }
