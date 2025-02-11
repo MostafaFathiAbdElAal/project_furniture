@@ -25,9 +25,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html dir="rtl" lang="ar" className="dark">
-      <Head>
-      <meta name="google-site-verification" content="n7hG5qwB88FrJAqJftZHMCbNvZV0M8wrDlGUiGXmaiE" />
-      </Head>
+      <head>
+        <meta name="google-site-verification" content="n7hG5qwB88FrJAqJftZHMCbNvZV0M8wrDlGUiGXmaiE" />
+      </head>
       <body>
         {<Navbar />}
         <a aria-label="راسلنا على الواتس اب" tabIndex={0} href="https://api.whatsapp.com/send/?phone=966508137522&text&app_absent=0" target="_blank" className="z-50 w-12 h-12 dark:bg-[#075E54] bg-[#25D366] bg-opacity-85 dark:bg-opacity-85 dark:hover:bg-opacity-100 hover:bg-opacity-100 transition-colors duration-300 fixed bottom-9 right-3 flex justify-center items-center rounded-full">
