@@ -45,8 +45,8 @@ export default function FormContactUs() {
         }
 
     }
-    return <fieldset>
-        <form className="space-y-4 flex flex-col font-cairo font-bold" action="https://formsubmit.co/a3ca0f662ae9ef151e9823104a9cbdff" method="POST">
+    return <fieldset className="font-cairo font-bold select-none">
+        <form className="space-y-4 flex flex-col" action="https://formsubmit.co/a3ca0f662ae9ef151e9823104a9cbdff" method="POST">
             <div className="relative">
             <p className="mb-1 mr-1 text-sm text-[#d7d7d7]">الأسم :</p>
                 <input  placeholder="الأسم بالكامل" className={`bg-[#222831] text-[#f1f1f1] border-0 p-2  focus:outline-none  transition ease-in-out duration-150 w-full pl-9`} type="text" maxLength={40} name="Full_Name" value={Formik.values.Full_Name} onChange={Formik.handleChange} onBlur={Formik.handleBlur} />

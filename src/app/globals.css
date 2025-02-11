@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  direction: rtl;
-
-}
-
 /* Navbar Responsive */
 @media(max-width:1024px) {
   #Barnav.active~ul {
@@ -23,20 +18,19 @@ body {
   }
 
 }
-
-
 html,
 body {
   scroll-padding-top: 64px;
   scroll-behavior: smooth;
 }
-
 body,
 html,
 :root {
   writing-mode: initial;
 }
-
+::selection{
+  @apply dark:bg-green-600 dark:text-white bg-cyan-300 text-black
+}
 form textarea,
 form input,
 span {

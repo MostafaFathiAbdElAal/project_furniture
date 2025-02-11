@@ -21,7 +21,7 @@ export default function services() {
                 <div className="dark:bg-[#1e293b] bg-white col-span-12 overflow-hidden sm:col-span-6 lg:col-span-4 group relative rounded-md border dark:border-slate-800 border-[#d2d2d2] shadow-sm">
                     <div tabIndex={3} className="card ">
                         <figure className="h-80 overflow-hidden">
-                            <Image src={imageService1} className="w-full h-full group-hover:scale-110 transition-transform duration-700 object-cover" alt="نقل الأثاث" />
+                            <Image priority src={imageService1} className="w-full h-full group-hover:scale-110 transition-transform duration-700 object-cover" alt="نقل الأثاث" />
                         </figure>
                         <div className="card-body min-h-52 font-Poppins font-bold">
                             <header className="px-5 ">
@@ -38,7 +38,7 @@ export default function services() {
                         </div>
                         <article className="font-Poppins font-bold border-t border-[#d2d2d2] border-solid">
                             <Accordion slotProps={{ heading: { component: 'div' } }} className="dark:bg-[#151a24]">
-                                <AccordionSummary tabIndex={3} className="text-lg font-cairo dark:text-white" expandIcon={<div aria-label="زر سهم لإظهار العناصر الخفية"> <ExpandMoreOutlined className="dark:text-white"/></div>}
+                                <AccordionSummary tabIndex={3} className="text-lg font-cairo dark:text-white" expandIcon={<div aria-label="زر سهم لإظهار العناصر الخفية"> <ExpandMoreOutlined className="dark:text-white" /></div>}
                                     aria-controls="panel1-content"
                                     id="panel1-header" >
                                     مميزات
@@ -57,7 +57,7 @@ export default function services() {
                 <div className="dark:bg-[#1e293b] bg-white overflow-hidden col-span-12 sm:col-span-6 lg:col-span-4 group relative rounded-md border dark:border-slate-800 border-[#d2d2d2] shadow-sm">
                     <div tabIndex={3} className="card">
                         <div className="h-80 overflow-hidden">
-                            <Image src={imageService2} className="w-full h-full group-hover:scale-110 transition-transform duration-700 object-cover" alt="فك وتركيب الأثاث" />
+                            <Image loading={"lazy"} decoding="async" src={imageService2} className="w-full h-full group-hover:scale-110 transition-transform duration-700 object-cover" alt="فك وتركيب الأثاث" />
                         </div>
                         <div className="card-body min-h-52 font-Poppins font-bold">
                             <header className="px-5 ">
@@ -75,7 +75,7 @@ export default function services() {
                         </div>
                         <article className="font-Poppins font-bold border-t border-[#d2d2d2] border-solid">
                             <Accordion slotProps={{ heading: { component: 'div' } }} className="dark:bg-[#151a24]">
-                                <AccordionSummary tabIndex={3} className="text-lg font-cairo dark:text-white" expandIcon={<div aria-label="زر سهم لإظهار العناصر الخفية"> <ExpandMoreOutlined className="dark:text-white"/></div>}
+                                <AccordionSummary tabIndex={3} className="text-lg font-cairo dark:text-white" expandIcon={<div aria-label="زر سهم لإظهار العناصر الخفية"> <ExpandMoreOutlined className="dark:text-white" /></div>}
                                     aria-controls="panel1-content"
                                     id="panel1-header" >
                                     مميزات
@@ -95,7 +95,7 @@ export default function services() {
                     <div tabIndex={3} className="card">
                         <figure className="h-80 overflow-hidden">
 
-                            <Image src={imageService3} className="w-full h-full group-hover:scale-110 transition-transform duration-700 object-cover" alt="عمال تغليف" />
+                            <Image loading={"lazy"} decoding="async" src={imageService3} className="w-full h-full group-hover:scale-110 transition-transform duration-700 object-cover" alt="عمال تغليف" />
                         </figure>
                         <div className="card-body min-h-52 font-Poppins font-bold">
                             <header className="px-5">
@@ -112,7 +112,7 @@ export default function services() {
                         </div>
                         <article className="font-Poppins font-bold border-t border-[#d2d2d2] border-solid">
                             <Accordion slotProps={{ heading: { component: 'div' } }} className="dark:bg-[#151a24]">
-                                <AccordionSummary tabIndex={3} className="text-lg font-cairo dark:text-white" expandIcon={<div aria-label="زر سهم لإظهار العناصر الخفية"> <ExpandMoreOutlined className="dark:text-white"/></div>}
+                                <AccordionSummary tabIndex={3} className="text-lg font-cairo dark:text-white" expandIcon={<div aria-label="زر سهم لإظهار العناصر الخفية"> <ExpandMoreOutlined className="dark:text-white" /></div>}
                                     aria-controls="panel1-content"
                                     id="panel1-header" >
                                     مميزات
@@ -131,7 +131,7 @@ export default function services() {
                 <div className="dark:bg-[#1e293b] bg-white col-span-12 sm:col-span-6 lg:col-span-4 relative group rounded-md border dark:border-slate-800 border-[#d2d2d2]  shadow-sm">
                     <div tabIndex={3} className="card">
                         <figure className="h-80 overflow-hidden">
-                            <Image src={imageService4} className="w-full h-full group-hover:scale-110 transition-transform duration-700 object-cover" alt="فك وتركيب المكيفات السبلت" />
+                            <Image loading={"lazy"} decoding="async" src={imageService4} className="w-full h-full group-hover:scale-110 transition-transform duration-700 object-cover" alt="فك وتركيب المكيفات السبلت" />
                         </figure>
                         <div className="card-body min-h-52 font-Poppins font-bold">
                             <header className="px-5 ">

@@ -38,14 +38,13 @@ export default function FormRequestService() {
         } else {
             useAlertSuccess()
         }
-
     }
-    return <fieldset className="flex flex-col items-center justify-center ligh">
+    return <fieldset className="flex flex-col items-center justify-center font-cairo font-bold select-none">
         <div className="w-full max-w-[95%] lg:max-w-[60%] dark:bg-white dark:bg-opacity-20 bg-white rounded-lg shadow-lg p-2 sm:p-5">
             <header>
-                <h2 className="text-2xl font-cairo font-bold dark:text-white text-gray-800 mb-4">نموذج حجز</h2>
+                <h2 className="text-2xl dark:text-white text-gray-800 mb-4">نموذج حجز</h2>
             </header>
-            <form className=" space-y-4 flex flex-col font-cairo font-bold" action="https://formsubmit.co/a3ca0f662ae9ef151e9823104a9cbdff" method="POST">
+            <form className=" space-y-4 flex flex-col" action="https://formsubmit.co/a3ca0f662ae9ef151e9823104a9cbdff" method="POST">
                 <div>
                     <input  tabIndex={2} placeholder="الأسم بالكامل" className={`dark:bg-[#222831] bg-gray-100 text-gray-800 dark:text-white border-0 rounded-md p-2 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 w-full`} type="text" name="Full_Name" value={Formik.values.Full_Name} onChange={Formik.handleChange} onBlur={Formik.handleBlur} />
                     {Formik.errors.Full_Name && Formik.touched.Full_Name ? <Alert severity="error" style={{ padding: 0 }} className="flex items-center gap-1 mt-1" ><span className="text-lg font-bold">{Formik.errors.Full_Name}</span></Alert> : null}
@@ -66,6 +65,7 @@ export default function FormRequestService() {
                         <option value="فك وتركيب">فك وتركيب</option>
                         <option value="فك / تركيب مكيفات">فك / تركيب مكيفات</option>
                     </select>
+                    
                 </div>
                 <div className="grid grid-cols-12 items-center">
                     <p className="col-span-12 sm:col-span-3 sm:translate-y-[40%] mb-1 sm:mb-5 text-lg dark:text-white text-black"> موعد التوصيل</p>
@@ -74,7 +74,7 @@ export default function FormRequestService() {
                     {Formik.errors.Date_and_time && Formik.touched.Date_and_time ? <Alert severity="error" style={{ padding: 0 }} className="flex items-center gap-1 mt-1" ><span className="text-lg font-bold">{Formik.errors.Date_and_time}</span></Alert> : null}
                     </div>
                 </div>
-                <button tabIndex={2} onClick={formIsEmpty} className="border-2 text-white py-2 px-4 rounded-md mt-4  font-cairo font-bold text-lg bg-cyan-400 border-cyan-400 dark:bg-cyan-500 dark:border-cyan-500 hover:bg-opacity-0 dark:hover:bg-opacity-0 hover:text-cyan-400 dark:hover:text-cyan-500 transition-colors duration-200" type={isValid()}>أحجز الان</button>
+                <button tabIndex={2} onClick={formIsEmpty} className="border-2 text-white py-2 px-4 rounded-md mt-4  font-cairo font-bold text-lg bg-green-500 border-green-500 dark:bg-cyan-500 dark:border-cyan-500 hover:bg-opacity-0 dark:hover:bg-opacity-0 hover:text-green-500 dark:hover:text-cyan-500 transition-colors duration-200" type={isValid()}>أحجز الان</button>
             </form>
         </div>
     </fieldset>

@@ -1,26 +1,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-    <loc>https://project-furniture-omega.vercel.app</loc>
+    <loc>https://tamez-furniture.site</loc>
     <lastmod>2025-02-02T02:30:00Z</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>yearly</changefreq>
     <priority>1</priority>
 </url>
 <url>
-    <loc>https://project-furniture-omega.vercel.app/services</loc>
+    <loc>https://tamez-furniture.site/services</loc>
     <lastmod>2025-02-02T02:30:00Z</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>yearly</changefreq>
     <priority>0.8</priority>
 </url>
 <url>
-    <loc>https://project-furniture-omega.vercel.app/requestService</loc>
+    <loc>https://tamez-furniture.site/requestService</loc>
     <lastmod>2025-02-02T02:30:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
 </url>
 <url>
-    <loc>https://project-furniture-omega.vercel.app/whoWeAre</loc>
+    <loc>https://tamez-furniture.site/whoWeAre</loc>
     <lastmod>2025-02-02T02:30:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
 </url>
 </urlset>

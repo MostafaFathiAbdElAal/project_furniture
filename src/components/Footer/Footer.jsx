@@ -7,7 +7,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import MapGoogle from "../MapGoogle/MapGoogle";
 export default function Footer() {
-    return <section id="footer" className="bg-[#080c14] text-[#eee] ">
+    return <footer id="footer" className="bg-[#080c14] text-[#eee] ">
         <section className="sm:p-5 mb-10">
             <div className=" h-1/2 rounded-sm">
                 <div className="grid grid-cols-12 px-4 gap-5 p-5">
@@ -73,5 +73,5 @@ export default function Footer() {
                 <p className="text-[#9b9b9b] dark:text-white font-cairo font-bold text-[10px] sm:text-sm text-center">جميع الحقوق محفوظة لدى شركة التميز لنقل العفش 2025©</p>
             </div>
         </section>
-    </section>
+    </footer>
 }

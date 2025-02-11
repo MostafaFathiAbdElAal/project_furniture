@@ -1,44 +1,46 @@
 'use client'
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 export default function Navbar() {
     const bar = useRef(null)
     const navBar = useRef(null)
     const ulLinks = useRef(null)
     const progressBar = useRef(null)
+    const btnTheme = useRef(null)
     let current = usePathname(null)
-    // Toggle darkmode
+    const [darkMode, setDarkMode] = useState(true)
+    // Toggle darkmode    
     function toggleDark(e) {
-        if (e.target.classList.contains("fa-sun")) {
-            e.target.classList.replace("fa-sun", "fa-moon")
+        if (darkMode === true) {
             document.documentElement.classList.remove("dark")
-        } else if (e.target.classList.contains("fa-moon")) {
-            e.target.classList.replace("fa-moon", "fa-sun")
+            e.target.classList.replace("fa-sun", "fa-moon")
+            setDarkMode(false)
+        } else if (darkMode === false) {
             document.documentElement.classList.add("dark")
+            e.target.classList.replace("fa-moon", "fa-sun")
+            setDarkMode(true)
         }
     }
     // Animation navbar
     useEffect(() => {
-        if (navBar.current && ulLinks.current && progressBar.current) {
-        
-            window.addEventListener("scroll", () => {
-                if (window.scrollY < 130) {
-                    navBar.current.classList.replace("h-16", "h-20")
-                    ulLinks.current.classList.replace("top-[52px]", "top-[60px]")
-                    // progress visiable
-                    progressBar.current.classList.contains("opacity-0") ? null : progressBar.current.classList.replace("opacity-100", "opacity-0")
-                } else {
-                    navBar.current.classList.replace("h-20", "h-16")
-                    ulLinks.current.classList.replace("top-[60px]", "top-[52px]")
-                    // progress invisiable
-                    progressBar.current.classList.contains("opacity-0") ? progressBar.current.classList.replace("opacity-0", "opacity-100") : null
-                }
-                // progress bar
-                progressBar.current.firstChild.style.width = `${(window.scrollY / (document.documentElement.scrollHeight - document.documentElement.clientHeight)) * 100}%`
-            },{passive:true})
-        }
-    }, [navBar, ulLinks, progressBar])
+        window.addEventListener("scroll", () => {
+            if (window.scrollY < 130) {
+                navBar.current.classList.replace("h-16", "h-20")
+                ulLinks.current.classList.replace("top-[52px]", "top-[60px]")
+                // progress visiable
+                progressBar.current.classList.contains("opacity-0") ? null : progressBar.current.classList.replace("opacity-100", "opacity-0")
+            } else {
+                navBar.current.classList.replace("h-20", "h-16")
+                ulLinks.current.classList.replace("top-[60px]", "top-[52px]")
+                // progress invisiable
+                progressBar.current.classList.contains("opacity-0") ? progressBar.current.classList.replace("opacity-0", "opacity-100") : null
+            }
+            // progress bar
+            progressBar.current.firstChild.style.width = `${(window.scrollY / (document.documentElement.scrollHeight - document.documentElement.clientHeight)) * 100}%`
+        }, { passive: true })
+
+    }, [])
     // Bar toggle 
     function toggleClass() {
         bar.current.classList.toggle("active")
@@ -53,7 +55,7 @@ export default function Navbar() {
         window.addEventListener("keyup", (e) => {
             if (e.code !== "Escape") return;
             bar.current.classList.contains("active") ? toggleClass() : null
-        },{passive:true})
+        })
     }, [bar])
     return <>
         <nav ref={navBar} className="dark:bg-[#17191c] bg-white dark:text-white text-black select-none py-2 fixed flex items-center top-0 h-20 w-screen  z-[9999] transition-[height] duration-300ms" style={{ boxShadow: "0px 30px 50px rgba(0, 0, 0, 0.05)" }}>
@@ -81,7 +83,7 @@ export default function Navbar() {
                         }} onClick={(e) => {
                             bar.current.classList.contains("active") ? toggleClass() : null
                             toggleDark(e)
-                        }} role="button" tabIndex={1} className={`fa-solid fa-sun mx-auto w-9 h-9 flex items-center justify-center dark:hover:bg-[rgba(246,247,249,0.13)] hover:bg-[rgba(35,39,47,.05)] rounded-full`}></i>
+                        }} role="button" ref={btnTheme} tabIndex={1} className={`fa-solid fa-sun mx-auto w-9 h-9 flex items-center justify-center dark:hover:bg-[rgba(246,247,249,0.13)] hover:bg-[rgba(35,39,47,.05)] rounded-full`}></i>
                     </li>
                     <li onClick={() => {
                         bar.current.classList.contains("active") ? toggleClass() : null
