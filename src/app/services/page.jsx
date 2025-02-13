@@ -8,14 +8,19 @@ import imageService2 from "@/images/images7.jpg";
 export const metadata = {
     title: "الخدمات",
     description: "نقدم لك خدمة نقل عفش آمنة وسريعة مع شركة التمييز لنقل العفش داخل وخارج الرياض باستخدام شاحنات مجهزة بمعدات حديثة لضمان سلامة الأثاث.",
+    openGraph: {
+        title: "الخدمات",
+        description: "نقدم لك خدمة نقل عفش آمنة وسريعة مع شركة التمييز لنقل العفش داخل وخارج الرياض باستخدام شاحنات مجهزة بمعدات حديثة لضمان سلامة الأثاث.",
+        url: "https://https://tamez-furniture.site/services",
+    }
 };
 export default function services() {
     return <>
         <section className="dark:bg-[#080c14] bg-[#ededed] pt-3 sm:pt-7 md:pt-10 pb-5 service">
             <header>
-                <h2 className="dark:text-white text-black after:block after:w-[40%] after:mx-auto after:h-[3px] after:bg-[#0078ff] dark:after:bg-[#0d9488] after:mt-2 w-fit font-bold text-2xl sm:text-4xl xl:text-5xl text-center font-Poppins mb-4 mx-auto">
+                <h1 className="dark:text-white text-black after:block after:w-[40%] after:mx-auto after:h-[3px] after:bg-[#0078ff] dark:after:bg-[#0d9488] after:mt-2 w-fit font-bold text-2xl sm:text-4xl xl:text-5xl text-center font-Poppins mb-4 mx-auto">
                     خدماتنا المتكاملة لنقل الأثاث في الرياض
-                </h2>
+                </h1>
             </header>
             <section className="grid grid-cols-12 items-start gap-5 px-3 sm:px-5" >
                 <div className="dark:bg-[#1e293b] bg-white col-span-12 overflow-hidden sm:col-span-6 lg:col-span-4 group relative rounded-md border dark:border-slate-800 border-[#d2d2d2] shadow-sm">
@@ -31,9 +36,9 @@ export default function services() {
                                 </h5>
                             </header>
                             <article className="px-5 py-2">
-                                <p className="card-text dark:text-slate-200 text-black text-center sm:text-right font-semibold pb-2 text-lg font-cairo  leading-8">
+                                <pag className="card-text dark:text-slate-200 text-black text-center sm:text-right font-semibold pb-2 text-lg font-cairo  leading-8">
                                     نقدم لك خدمة نقل عفش آمنة وسريعة داخل وخارج الرياض باستخدام شاحنات مجهزة بمعدات حديثة لضمان سلامة الأثاث. فريقنا ملتزم بالحفاظ على أثاثك من أي ضرر أثناء التحميل والتنزيل.
-                                </p>
+                                </pag>
                             </article>
                         </div>
                         <article className="font-Poppins font-bold border-t border-[#d2d2d2] border-solid">

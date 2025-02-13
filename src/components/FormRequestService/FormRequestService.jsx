@@ -39,11 +39,7 @@ export default function FormRequestService() {
             useAlertSuccess()
         }
     }
-    return <fieldset className="flex flex-col items-center justify-center font-cairo font-bold select-none">
-        <div className="w-full max-w-[95%] lg:max-w-[60%] dark:bg-white dark:bg-opacity-20 bg-white rounded-lg shadow-lg p-2 sm:p-5">
-            <header>
-                <h2 className="text-2xl dark:text-white text-gray-800 mb-4">نموذج حجز</h2>
-            </header>
+    return <>
             <form className=" space-y-4 flex flex-col" action="https://formsubmit.co/a3ca0f662ae9ef151e9823104a9cbdff" method="POST">
                 <div>
                     <input  tabIndex={2} placeholder="الأسم بالكامل" className={`dark:bg-[#222831] bg-gray-100 text-gray-800 dark:text-white border-0 rounded-md p-2 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 w-full`} type="text" name="Full_Name" value={Formik.values.Full_Name} onChange={Formik.handleChange} onBlur={Formik.handleBlur} />
@@ -76,6 +72,5 @@ export default function FormRequestService() {
                 </div>
                 <button tabIndex={2} onClick={formIsEmpty} className="border-2 text-white py-2 px-4 rounded-md mt-4  font-cairo font-bold text-lg bg-green-500 border-green-500 dark:bg-cyan-500 dark:border-cyan-500 hover:bg-opacity-0 dark:hover:bg-opacity-0 hover:text-green-500 dark:hover:text-cyan-500 transition-colors duration-200" type={isValid()}>أحجز الان</button>
             </form>
-        </div>
-    </fieldset>
+        </>
 }

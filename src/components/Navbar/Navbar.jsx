@@ -61,12 +61,9 @@ export default function Navbar() {
         <nav ref={navBar} className="dark:bg-[#17191c] bg-white dark:text-white text-black select-none py-2 fixed flex items-center top-0 h-20 w-screen  z-[9999] transition-[height] duration-300ms" style={{ boxShadow: "0px 30px 50px rgba(0, 0, 0, 0.05)" }}>
             <div className={`lg:container relative flex items-center gap-6 w-full`}>
                 <header className="ps-3 lg:ps-0">
-                    <h1 onClick={() => {
-                    }} className="text-lg text-nowrap sm:text-2xl font-cairo font-bold">
-                        <Link tabIndex={2} href={"/"}>
+                        <Link tabIndex={2} href={"/"} className="text-lg text-nowrap sm:text-2xl font-cairo font-bold">
                             التميز لنقل العفش
                         </Link>
-                    </h1>
                 </header>
                 <i tabIndex={1} ref={bar} id="Barnav" role="button" onClick={() => {
                     toggleClass()

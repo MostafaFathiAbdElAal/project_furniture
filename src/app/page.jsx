@@ -7,15 +7,20 @@ export const metadata = {
   title: "الرئيسية",
   description: "مرحبًا بك في شركة التميز العفش ، وجهتك الموثوقة لخدمات نقل العفش داخل وخارج الرياض. نقدم حلولًا متكاملة تشمل النقل، الفك، التركيب، التغليف، وفك وتركيب مكيفات السبلت. نلتزم بتقديم أفضل جودة بأيدي فريق محترف وبأسعار تنافسية",
   keywords: ["نقل عفش", "نقل الأثاث", "أفضل شركة لنقل العفش", "نقل الأثاث بالرياض", "شركة مضمونة لنقل العفش"]
+  , openGraph: {
+    title: "الرئيسية",
+    description: "مرحبًا بك في شركة التميز العفش ، وجهتك الموثوقة لخدمات نقل العفش داخل وخارج الرياض. نقدم حلولًا متكاملة تشمل النقل، الفك، التركيب، التغليف، وفك وتركيب مكيفات السبلت. نلتزم بتقديم أفضل جودة بأيدي فريق محترف وبأسعار تنافسية",
+    url:"https://https://tamez-furniture.site",
+  }
 };
 export default function Home() {
   return <>
     <section className="homePage relative  overflow-hidden font-cairo font-bold min-h-[50vh]">
       <div className="px-2 sm:px-10 grid grid-cols-12 sm:max-md:gap-5 z-10 overflow-hidden relative min-h-[50vh] py-10">
         <div className="col-span-12 md:col-span-7 h-full flex flex-col gap-5 justify-center self-center">
-          <header className="space-y-2 sm:space-y-3">
+          <header className="gap-2 sm:gap-3 flex flex-col-reverse">
+            <h1 className="text-2xl sm:text-3xl md:ps-2 text-center md:text-right font-extrabold text-[#fdfefe]">التميز لنقل العفش</h1>
             <h2 className="text-xl text-center md:text-right text-[#f2f9fe]">مرحبا بكم  في</h2>
-            <h3 className="text-2xl sm:text-3xl md:ps-2 text-center md:text-right font-extrabold text-[#fdfefe]">التميز لنقل العفش</h3>
           </header>
           <TypingAnimation />
         </div>
@@ -23,7 +28,7 @@ export default function Home() {
         <div className="col-span-12 md:col-span-5 self-center justify-self-center select-none">
           <div className="relative hidden sm:block">
 
-            <figure className="font- max-h-72 max-w-72 relative rounded-lg overflow-hidden after:bg-black after:bg-opacity-20 after:absolute after:top-0 after:bottom-0 after:w-full">
+            <figure className="max-h-72 max-w-72 relative rounded-lg overflow-hidden after:bg-black after:bg-opacity-20 after:absolute after:top-0 after:bottom-0 after:w-full">
               <Image src={image1} className="w-full h-full object-cover" alt="نقل الأثاث" priority />
 
             </figure>
@@ -47,7 +52,7 @@ export default function Home() {
         </div>
       </div>
       <figure className="absolute top-0 bottom-0 w-full flex flex-col justify-center select-none items-center after:bg-black after:bg-opacity-60 after:absolute after:top-0 after:bottom-0 after:w-full  ">
-        <Image src={homeBackground} className="w-full h-full object-cover object-center " alt="أثاث رائع" priority/>
+        <Image src={homeBackground} className="w-full h-full object-cover object-center " alt="أثاث رائع" priority />
       </figure>
     </section>
     <section className="dark:bg-[#080c14] bg-[#ededed] p-5  font-cairo font-bold text-lg sm:text-xl md:text-xl">
