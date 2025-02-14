@@ -62,7 +62,7 @@ export default function Home() {
             لماذا نحن <span className="dark:text-[#eab308] text-[#06b6d4] font-cairo">؟</span>
           </h2>
         </header>
-        <section className="pt-5 px-10">
+        <section className="pt-5 px-10 flex flex-col items-center">
           <CardsInHome />
         </section>
       </div>

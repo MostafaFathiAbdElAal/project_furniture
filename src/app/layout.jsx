@@ -16,7 +16,7 @@ export const metadata = {
     siteName: 'التميز لنقل العفش بالرياض'
   },
   icons: {
-    icon: null
+    icon: []
   }
 }
 export default function RootLayout({ children }) {
@@ -30,9 +30,9 @@ export default function RootLayout({ children }) {
         <a aria-label="اتصل بنا" tabIndex={0} href="tel:+966542683288" className="z-50 w-12 h-12 bg-black shadow-md group hover:rotate-12 text-white dark:bg-white dark:text-[#085cce] bg-opacity-90 dark:bg-opacity-90 dark:hover:bg-opacity-100 hover:bg-opacity-100 fixed bottom-9 left-3 flex transition-colors duration-300 justify-center items-center rounded-full">
           <span className="fa-solid fa-phone transition-transform duration-200 text-2xl group-hover:-translate-y-1"></span>
         </a>
-        <section className="mt-[80px] overflow-hidden">
+        <main className="mt-20 overflow-hidden">
           {children}
-        </section>
+        </main>
         {<Footer />}
         <SpeedInsights />
       </body>

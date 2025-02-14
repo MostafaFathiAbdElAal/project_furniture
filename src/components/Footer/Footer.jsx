@@ -7,9 +7,11 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import MapGoogle from "../MapGoogle/MapGoogle";
 export default function Footer() {
-    return <footer id="footer" className="bg-[#080c14] text-[#eee] ">
-        <section className="sm:p-5 mb-10">
-            <div className=" h-1/2 rounded-sm">
+    const date = new Date()
+    const currentYear = date.getFullYear() 
+    return <footer className="bg-[#080c14] text-[#eee]">
+        <section className="sm:p-2 lg:p-5 mb-10">
+            <div className="h-1/2 rounded-sm">
                 <div className="grid grid-cols-12 px-4 gap-5 p-5">
                     <div className="col-span-12 sm:col-span-12 md:col-span-6">
                         <header>
@@ -22,7 +24,7 @@ export default function Footer() {
                             <FormContactUs />
                         </div>
                     </div>
-                    <div className="col-span-12 left sm:col-span-12 md:col-span-6 space-y-5">
+                    <div className="col-span-12 left sm:col-span-12 md:col-span-6 space-y-5 flex flex-col">
                         <header>
                             <h3 className="after:block mx-auto sm:mx-0 after:w-[40%]  after:h-[3px] after:bg-green-300 dark:after:bg-cyan-600 after:mx-[auto] sm:after:mx-[5px] after:mt-[10px] w-fit font-bold text-4xl font-Poppins mb-4">لا تنسى زيارتنا</h3>
                         </header>
@@ -40,7 +42,6 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a aria-label="الاتصال بنا هاتفيا" href="tel:+966508137522" target="_blank"><p className="flex items-center hover:underline"><span className="me-2 text-center text-green-200 dark:text-cyan-200 text-xl mb-1"><SmartphoneOutlinedIcon fontSize="inherit" /></span>966508137522+</p></a>
-
                             </li>
                             <li>
                                 <a aria-label="إرسال رسالة لنا على البريد الإلكتروني" href="mailto:tamez.furniture.sa@gmail.com" target="_blank"><p className="flex items-center hover:underline"><span className="me-2 text-center text-green-200 dark:text-cyan-200 text-xl "><EmailOutlinedIcon fontSize="inherit" /></span>tamez.furniture.sa@gmail.com</p></a>
@@ -70,7 +71,7 @@ export default function Footer() {
                         </a>
                     </li>
                 </ul>
-                <p className="text-[#9b9b9b] dark:text-white font-cairo font-bold text-[10px] sm:text-sm text-center">جميع الحقوق محفوظة لدى شركة التميز لنقل العفش 2025©</p>
+                <p className="text-[#9b9b9b] dark:text-white font-cairo font-bold text-[10px] sm:text-sm text-center">جميع الحقوق محفوظة لدى شركة التميز لنقل العفش {currentYear}©</p>
             </div>
         </section>
     </footer>

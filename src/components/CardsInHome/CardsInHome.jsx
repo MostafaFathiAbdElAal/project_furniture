@@ -13,18 +13,18 @@ export default function CardsInHome() {
             once: false,
         })
     }, [])
-    return <div className="grid grid-cols-12 justify-center items-start gap-5 mt-2">
-        <div 
-        data-aos="zoom-in-up"
-        className="col-span-12 sm:col-span-6 lg:col-span-4">
-            <Card sx={{ maxWidth: 450, borderRadius: "0px",marginInline:"auto"}} className="hover:shadow-xl hover:shadow-green-200 transition-[background,box-shadow] duration-300" >
-                <CardActionArea>
+    return <div className="grid grid-cols-12 gap-5 mt-2">
+        <div
+            data-aos="zoom-in-up"
+            className="col-span-12 sm:col-span-6 lg:col-span-4">
+            <Card sx={{ maxWidth: 450, borderRadius: "0px", marginInline: "auto" }} className="h-full hover:shadow-xl hover:shadow-green-200 transition-[background,box-shadow] duration-300" >
+                <CardActionArea sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                     <CardMedia height="140">
                         <figure className="w-full">
                             <Image decoding="async" loading="lazy" src={image2} alt="الجدة في العمل" />
                         </figure>
                     </CardMedia>
-                    <CardContent className="dark:bg-[#111827] dark:text-white ">
+                    <CardContent className="dark:bg-[#111827] dark:text-white grow">
                         <Typography gutterBottom sx={{ textAlign: "center", fontFamily: "Cairo Variable , sans-serif", fontWeight: "700", fontSize: "21px" }} variant="h3" component="div">
                             الجدة في العمل
                         </Typography>
@@ -35,17 +35,17 @@ export default function CardsInHome() {
                 </CardActionArea>
             </Card>
         </div>
-        <div 
-        data-aos="zoom-in-up"
-        className="col-span-12 sm:col-span-6 lg:col-span-4">
-            <Card sx={{ maxWidth: 450, borderRadius: "0px" ,marginInline:"auto"}} className="hover:shadow-xl hover:shadow-green-200 transition-[background,box-shadow] duration-300" >
-                <CardActionArea>
+        <div
+            data-aos="zoom-in-up"
+            className="col-span-12 sm:col-span-6 lg:col-span-4">
+            <Card sx={{ maxWidth: 450, borderRadius: "0px", marginInline: "auto" }} className="h-full hover:shadow-xl hover:shadow-green-200 transition-[background,box-shadow] duration-300" >
+                <CardActionArea sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                     <CardMedia height="140">
                         <figure className="w-full">
                             <Image decoding="async" loading="lazy" src={image3} alt="مستوى الخدمة" />
                         </figure>
                     </CardMedia>
-                    <CardContent className="dark:bg-[#111827] dark:text-white ">
+                    <CardContent className="dark:bg-[#111827] dark:text-white grow">
                         <Typography gutterBottom sx={{ textAlign: "center", fontFamily: "Cairo Variable , sans-serif", fontWeight: "700", fontSize: "21px" }} variant="h3" component="div">
                             مستوى الخدمة
                         </Typography>
@@ -56,17 +56,17 @@ export default function CardsInHome() {
                 </CardActionArea>
             </Card>
         </div>
-        <div 
-        data-aos="zoom-in-up"
-        className="col-span-12 sm:col-span-6 lg:col-span-4">
-            <Card sx={{ maxWidth: 450, borderRadius: "0px" ,marginInline:"auto"}} className="hover:shadow-xl hover:shadow-green-200 transition-[background,box-shadow] duration-300">
-                <CardActionArea>
+        <div
+            data-aos="zoom-in-up"
+            className="col-span-12 sm:col-span-6 lg:col-span-4">
+            <Card sx={{ maxWidth: 450, borderRadius: "0px", marginInline: "auto" }} className="h-full hover:shadow-xl hover:shadow-green-200 transition-[background,box-shadow] duration-300">
+                <CardActionArea sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                     <CardMedia height="140">
                         <figure className="w-full">
                             <Image decoding="async" loading="lazy" src={image4} alt="فريقنا" />
                         </figure>
                     </CardMedia>
-                    <CardContent className="dark:bg-[#111827] dark:text-white ">
+                    <CardContent className="dark:bg-[#111827] dark:text-white grow">
                         <Typography gutterBottom sx={{ textAlign: "center", fontFamily: "Cairo Variable , sans-serif", fontWeight: "700", fontSize: "21px" }} variant="h3" component="div">
                             فريقنا
                         </Typography>

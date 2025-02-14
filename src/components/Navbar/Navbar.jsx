@@ -57,8 +57,7 @@ export default function Navbar() {
             bar.current.classList.contains("active") ? toggleClass() : null
         })
     }, [bar])
-    return <>
-        <nav ref={navBar} className="dark:bg-[#17191c] bg-white dark:text-white text-black select-none py-2 fixed flex items-center top-0 h-20 w-screen  z-[9999] transition-[height] duration-300ms" style={{ boxShadow: "0px 30px 50px rgba(0, 0, 0, 0.05)" }}>
+    return <nav ref={navBar} className="dark:bg-[#17191c] bg-white dark:text-white text-black select-none py-2 fixed flex items-center top-0 h-20 w-screen  z-[9999] transition-[height] duration-300ms" style={{ boxShadow: "0px 30px 50px rgba(0, 0, 0, 0.05)" }}>
             <div className={`lg:container relative flex items-center gap-6 w-full`}>
                 <header className="ps-3 lg:ps-0">
                         <Link tabIndex={2} href={"/"} className="text-lg text-nowrap sm:text-2xl font-cairo font-bold">
@@ -94,7 +93,7 @@ export default function Navbar() {
                         bar.current.classList.contains("active") ? toggleClass() : null
                     }}>
                         <Link tabIndex={1} className={`relative font-bold font-cairo text-lg rounded-e-full rounded-s-full px-3 hover:before:w-full before:transition-[width] before:duration-300 
-                            before:absolute before:left-0 before:-bottom-1 before:h-[2px] before:bg-Success ${current === "/services" ? "before:w-full dark:bg-[rgba(88,175,223,.1)] bg-[rgb(230,247,255)] dark:text-[rgb(88,196,220)] text-[rgb(8,126,164)]" : "before:w-0 dark:hover:bg-[rgba(246,247,249,0.13)] hover:bg-[rgba(35,39,47,.05)]"}`} href={"/services"}>
+                            before:absolute before:left-0 before:-bottom-1 before:h-[2px] before:bg-Success ${current === "/we_services" ? "before:w-full dark:bg-[rgba(88,175,223,.1)] bg-[rgb(230,247,255)] dark:text-[rgb(88,196,220)] text-[rgb(8,126,164)]" : "before:w-0 dark:hover:bg-[rgba(246,247,249,0.13)] hover:bg-[rgba(35,39,47,.05)]"}`} href={"/we_services"}>
                             الخدمات
                         </Link>
                     </li>
@@ -103,7 +102,7 @@ export default function Navbar() {
 
                     }}>
                         <Link tabIndex={1} className={`relative font-bold font-cairo text-lg rounded-e-full rounded-s-full px-3 hover:bg-[rgba(246,247,249,0.13)] hover:before:w-full before:transition-[width] before:duration-300 
-                            before:absolute before:left-0 before:-bottom-1 before:h-[2px] before:bg-Success ${current === "/requestService" ? "before:w-full dark:bg-[rgba(88,175,223,.1)] bg-[rgb(230,247,255)] dark:text-[rgb(88,196,220)] text-[rgb(8,126,164)]" : "before:w-0 dark:hover:bg-[rgba(246,247,249,0.13)] hover:bg-[rgba(35,39,47,.05)]"}`} href={"/requestService"}>
+                            before:absolute before:left-0 before:-bottom-1 before:h-[2px] before:bg-Success ${current === "/request_service" ? "before:w-full dark:bg-[rgba(88,175,223,.1)] bg-[rgb(230,247,255)] dark:text-[rgb(88,196,220)] text-[rgb(8,126,164)]" : "before:w-0 dark:hover:bg-[rgba(246,247,249,0.13)] hover:bg-[rgba(35,39,47,.05)]"}`} href={"/request_service"}>
                             طلب الخدمة
                         </Link>
                     </li>
@@ -112,7 +111,7 @@ export default function Navbar() {
 
                     }}>
                         <Link tabIndex={1} className={`relative font-bold font-cairo text-lg rounded-e-full rounded-s-full px-3 hover:bg-[rgba(246,247,249,0.13)] hover:before:w-full before:transition-[width] before:duration-300 
-                        before:absolute before:left-0 before:-bottom-1 before:h-[2px] before:bg-Success ${current === "/whoWeAre" ? "before:w-full dark:bg-[rgba(88,175,223,.1)] bg-[rgb(230,247,255)] dark:text-[rgb(88,196,220)] text-[rgb(8,126,164)]" : "before:w-0 dark:hover:bg-[rgba(246,247,249,0.13)] hover:bg-[rgba(35,39,47,.05)]"}`} href={"/whoWeAre"}>
+                        before:absolute before:left-0 before:-bottom-1 before:h-[2px] before:bg-Success ${current === "/who_we_are" ? "before:w-full dark:bg-[rgba(88,175,223,.1)] bg-[rgb(230,247,255)] dark:text-[rgb(88,196,220)] text-[rgb(8,126,164)]" : "before:w-0 dark:hover:bg-[rgba(246,247,249,0.13)] hover:bg-[rgba(35,39,47,.05)]"}`} href={"/who_we_are"}>
                             من نحن
                         </Link>
                     </li>
@@ -121,6 +120,5 @@ export default function Navbar() {
             <div aria-hidden="true" ref={progressBar} className="h-1 absolute -bottom-1 opacity-0 transition-opacity duration-500 dark:bg-[#713f12] bg-[#facc15] w-full">
                 <div className="h-full dark:bg-[#facc15] bg-[#713f12] rounded-e-full" style={{ width: "0px" }}></div>
             </div>
-        </nav >
-    </>
+        </nav>
 }
