@@ -36,7 +36,6 @@ form input,
 span {
   direction: rtl;
 }
-
 form textarea::placeholder,
 form input::placeholder {
   font-weight: 600;

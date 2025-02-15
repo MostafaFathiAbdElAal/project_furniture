@@ -9,7 +9,7 @@ import MapGoogle from "../MapGoogle/MapGoogle";
 export default function Footer() {
     const date = new Date()
     const currentYear = date.getFullYear() 
-    return <footer className="bg-[#080c14] text-[#eee]">
+    return <footer id='footer' className="bg-[#080c14] text-[#eee]">
         <section className="sm:p-2 lg:p-5 mb-10">
             <div className="h-1/2 rounded-sm">
                 <div className="grid grid-cols-12 px-4 gap-5 p-5">
@@ -17,7 +17,7 @@ export default function Footer() {
                         <header>
                             <h2 className="after:block mx-auto sm:mx-0 after:w-[40%] after:h-[3px] after:bg-green-300 dark:after:bg-cyan-600 after:mx-[auto] sm:after:mx-[5px] after:mt-[10px] w-fit font-bold text-4xl font-Poppins mb-4">أرسل لنا رسالة</h2>
                         </header>
-                        <article className="mt-5">
+                        <article className="mt-10">
                             <p className="text-lg font-cairo font-bold text-center sm:text-right">سيتم الإتصال خلال لحظات لتأكيد الحجز</p>
                         </article>
                         <div className="mt-[54px]">
@@ -35,19 +35,24 @@ export default function Footer() {
                                 ماذا تنتظر راسلنا الان عبر مواقع التواصل الإجتماعي او بتسجيل بيانتك هنا
                             </p>
                         </article>
+                        <section className="flex flex-col-reverse gap-7 md:flex-col grow">
                         <ul className="font-Poppins text-xs sm:text-sm  font-bold">
-                            <li>
+                            <li className="w-fit">
                                 <a aria-label="موقعنا على الخريطة" href="https://maps.app.goo.gl/QimrsfF8j62Qxf2U6" target="_blank"><p className="flex items-center hover:underline"><span className="me-2 text-center text-green-200 dark:text-cyan-200 text-xl"><LocationOnOutlinedIcon fontSize="inherit" /></span>Riyadh-Saudi Arabia</p> </a>
 
                             </li>
-                            <li>
-                                <a aria-label="الاتصال بنا هاتفيا" href="tel:+966508137522" target="_blank"><p className="flex items-center hover:underline"><span className="me-2 text-center text-green-200 dark:text-cyan-200 text-xl mb-1"><SmartphoneOutlinedIcon fontSize="inherit" /></span>966508137522+</p></a>
+                            <li className="w-fit">
+                                <a aria-label="الاتصال بنا هاتفيا" href="tel:+966542683288" target="_blank"><p className="flex items-center hover:underline tracking-tight"><span className="me-2 text-center text-green-200 dark:text-cyan-200 text-xl mb-1"><SmartphoneOutlinedIcon fontSize="inherit" /></span>966542683288+</p></a>
                             </li>
-                            <li>
+                            <li className="w-fit">
+                                <a aria-label="التواصل معنا واتس اب" href="https://api.whatsapp.com/send/?phone=966508137522&text&app_absent=0" target="_blank"><p className="flex items-center hover:underline"><span className="me-2 text-center text-green-200 dark:text-cyan-200 text-xl mb-1"><WhatsAppIcon fontSize="inherit" /></span>966508137522+</p></a>
+                            </li>
+                            <li className="w-fit">
                                 <a aria-label="إرسال رسالة لنا على البريد الإلكتروني" href="mailto:tamez.furniture.sa@gmail.com" target="_blank"><p className="flex items-center hover:underline"><span className="me-2 text-center text-green-200 dark:text-cyan-200 text-xl "><EmailOutlinedIcon fontSize="inherit" /></span>tamez.furniture.sa@gmail.com</p></a>
                             </li>
                         </ul>
                         <MapGoogle />
+                        </section>
                     </div>
                 </div>
             </div>

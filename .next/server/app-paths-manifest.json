@@ -1,9 +1,8 @@
 {
   "/sitemap.xml/route": "app/sitemap.xml/route.js",
-  "/robots.txt/route": "app/robots.txt/route.js",
-  "/request_service/page": "app/request_service/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
+  "/who_we_are/page": "app/who_we_are/page.js",
   "/we_services/page": "app/we_services/page.js",
+  "/request_service/page": "app/request_service/page.js",
   "/page": "app/page.js",
-  "/who_we_are/page": "app/who_we_are/page.js"
+  "/_not-found/page": "app/_not-found/page.js"
 }
