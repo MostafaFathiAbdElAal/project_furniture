@@ -8,7 +8,7 @@ export const metadata = {
     , openGraph: {
         title: "من نحن",
         description: "شركة التميز هي شركة متخصصة في خدمات نقل العفش بالرياض، نقدم حلولًا شاملة تشمل الفك والتركيب والتغليف وفك وتركيب مكيفات السبلت بأعلى جودة وبأيدٍ محترفة لضمان راحة عملائنا.",
-        url: "https://https://tamez-furniture.site/who_we_are",
+        url: "https://www.tamez-furniture.site/who_we_are",
     }
 };
 export default function whoWeAre() {

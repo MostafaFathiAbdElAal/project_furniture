@@ -35,11 +35,10 @@ export default function Footer() {
                                 ماذا تنتظر راسلنا الان عبر مواقع التواصل الإجتماعي او بتسجيل بيانتك هنا
                             </p>
                         </article>
-                        <section className="flex flex-col-reverse gap-7 md:flex-col grow">
+                        <section className="flex flex-col gap-7 grow">
                         <ul className="font-Poppins text-xs sm:text-sm  font-bold">
                             <li className="w-fit">
                                 <a aria-label="موقعنا على الخريطة" href="https://maps.app.goo.gl/QimrsfF8j62Qxf2U6" target="_blank"><p className="flex items-center hover:underline"><span className="me-2 text-center text-green-200 dark:text-cyan-200 text-xl"><LocationOnOutlinedIcon fontSize="inherit" /></span>Riyadh-Saudi Arabia</p> </a>
-
                             </li>
                             <li className="w-fit">
                                 <a aria-label="الاتصال بنا هاتفيا" href="tel:+966542683288" target="_blank"><p className="flex items-center hover:underline tracking-tight"><span className="me-2 text-center text-green-200 dark:text-cyan-200 text-xl mb-1"><SmartphoneOutlinedIcon fontSize="inherit" /></span>966542683288+</p></a>

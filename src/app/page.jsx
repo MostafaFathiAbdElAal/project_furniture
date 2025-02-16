@@ -10,7 +10,7 @@ export const metadata = {
   , openGraph: {
     title: "الرئيسية",
     description: "مرحبًا بك في شركة التميز العفش ، وجهتك الموثوقة لخدمات نقل العفش داخل وخارج الرياض. نقدم حلولًا متكاملة تشمل النقل، الفك، التركيب، التغليف، وفك وتركيب مكيفات السبلت. نلتزم بتقديم أفضل جودة بأيدي فريق محترف وبأسعار تنافسية",
-    url:"https://https://tamez-furniture.site",
+    url:"https://www.tamez-furniture.site",
   }
 };
 export default function Home() {

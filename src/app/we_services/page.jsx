@@ -11,7 +11,7 @@ export const metadata = {
     openGraph: {
         title: "الخدمات",
         description: "نقدم لك خدمة نقل عفش آمنة وسريعة مع شركة التمييز لنقل العفش داخل وخارج الرياض باستخدام شاحنات مجهزة بمعدات حديثة لضمان سلامة الأثاث.",
-        url: "https://https://tamez-furniture.site/we_services",
+        url: "https://www.tamez-furniture.site/we_services",
     }
 };
 export default function services() {

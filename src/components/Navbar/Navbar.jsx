@@ -102,7 +102,7 @@ export default function Navbar() {
 
                     }}>
                         <Link tabIndex={1} className={`relative font-bold font-cairo text-lg rounded-e-full rounded-s-full px-3 hover:bg-[rgba(246,247,249,0.13)] hover:before:w-full before:transition-[width] before:duration-300 
-                            before:absolute before:left-0 before:-bottom-1 before:h-[2px] before:bg-Success ${current === "/request_service" ? "before:w-full dark:bg-[rgba(88,175,223,.1)] bg-[rgb(230,247,255)] dark:text-[rgb(88,196,220)] text-[rgb(8,126,164)]" : "before:w-0 dark:hover:bg-[rgba(246,247,249,0.13)] hover:bg-[rgba(35,39,47,.05)]"}`} href={"/request_service"}>
+                            before:absolute before:left-0 before:-bottom-1 before:h-[2px] before:bg-Success ${current === "/service_order" ? "before:w-full dark:bg-[rgba(88,175,223,.1)] bg-[rgb(230,247,255)] dark:text-[rgb(88,196,220)] text-[rgb(8,126,164)]" : "before:w-0 dark:hover:bg-[rgba(246,247,249,0.13)] hover:bg-[rgba(35,39,47,.05)]"}`} href={"/service_order"}>
                             طلب الخدمة
                         </Link>
                     </li>
