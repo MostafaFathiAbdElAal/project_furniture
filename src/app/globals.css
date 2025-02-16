@@ -18,24 +18,37 @@
   }
 
 }
+
+html.dark body {
+  background-color: #080c14;
+}
+
+body {
+  background-color: #ededed;
+}
+
 html,
 body {
   scroll-padding-top: 64px;
   scroll-behavior: smooth;
 }
+
 body,
 html,
 :root {
   writing-mode: initial;
 }
-::selection{
+
+::selection {
   @apply dark:bg-green-600 dark:text-white bg-cyan-300 text-black
 }
+
 form textarea,
 form input,
 span {
   direction: rtl;
 }
+
 form textarea::placeholder,
 form input::placeholder {
   font-weight: 600;

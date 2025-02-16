@@ -25,7 +25,7 @@ export default function Navbar() {
     // Animation navbar
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            if (window.scrollY < 130) {
+            if (window.scrollY < 110) {
                 navBar.current.classList.replace("h-16", "h-20")
                 ulLinks.current.classList.replace("top-[52px]", "top-[60px]")
                 // progress visiable
