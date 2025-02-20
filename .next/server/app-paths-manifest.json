@@ -1,10 +1,10 @@
 {
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/robots.txt/route": "app/robots.txt/route.js",
   "/sitemap.xml/route": "app/sitemap.xml/route.js",
-  "/who_we_are/page": "app/who_we_are/page.js",
-  "/page": "app/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
   "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/service_order/page": "app/service_order/page.js",
   "/we_services/page": "app/we_services/page.js",
-  "/service_order/page": "app/service_order/page.js"
+  "/who_we_are/page": "app/who_we_are/page.js"
 }
