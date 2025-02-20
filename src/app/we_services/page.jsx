@@ -22,7 +22,7 @@ export default function services() {
                     خدماتنا المتكاملة لنقل الأثاث في الرياض
                 </h1>
             </header>
-            <section className="grid grid-cols-12 gap-5 px-3 sm:px-5 justify-items-center" >
+            <section className="grid grid-cols-12 gap-5 px-2 sm:px-5 justify-items-center" >
                 <div className="dark:bg-[#1e293b] bg-white col-span-12 overflow-hidden sm:col-span-6 lg:col-span-4 max-w-96 group relative rounded-md border dark:border-slate-800 border-[#d2d2d2] shadow-sm">
                     <div tabIndex={3} className="card h-full flex flex-col justify-between">
                         <figure className="h-80 overflow-hidden">

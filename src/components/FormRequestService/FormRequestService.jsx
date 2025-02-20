@@ -40,7 +40,7 @@ export default function FormRequestService() {
         }
     }
     return <>
-            <form className=" space-y-4 flex flex-col" action="https://formsubmit.co/a3ca0f662ae9ef151e9823104a9cbdff" method="POST">
+            <form data-nosnippet className="space-y-4 flex flex-col" action="https://formsubmit.co/a3ca0f662ae9ef151e9823104a9cbdff" method="POST">
                 <div>
                     <input  tabIndex={2} placeholder="الأسم بالكامل" className={`dark:bg-[#222831] bg-gray-100 text-gray-800 dark:text-white border-0 rounded-md p-2 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 w-full`} type="text" name="Full_Name" value={Formik.values.Full_Name} onChange={Formik.handleChange} onBlur={Formik.handleBlur} />
                     {Formik.errors.Full_Name && Formik.touched.Full_Name ? <Alert severity="error" style={{ padding: 0 }} className="flex items-center gap-1 mt-1" ><span className="text-lg font-bold">{Formik.errors.Full_Name}</span></Alert> : null}

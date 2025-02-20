@@ -3,7 +3,6 @@ import '@fontsource-variable/cairo/slnt.css';
 import "@fontsource/poppins";
 import 'aos/dist/aos.css';
 import "./globals.css";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 export const viewport = {
@@ -14,9 +13,6 @@ export const metadata = {
     type: "website",
     locale: "ar_SA",
     siteName: 'التميز لنقل العفش بالرياض'
-  },
-  icons: {
-    icon: []
   },
 }
 export default function RootLayout({ children }) {
@@ -34,7 +30,6 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         {<Footer />}
-        <SpeedInsights />
       </body>
     </html>
   );
