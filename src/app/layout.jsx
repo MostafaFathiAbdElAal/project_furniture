@@ -19,17 +19,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html dir="rtl" lang="ar" className="dark">
-      <head>
-        <script type="application/ld+json">
-          {`
-            "@context":"https://schema.org",
-            "@type":"MovingCompany",
-            "name":"التميز لنقل العفش",
-            "telephone":"+966542683288",
-            "email":"tamez.furniture.sa@gmail.com"
-            `}
-        </script>
-      </head>
       <body>
         {<Navbar />}
         <main className="max-w-[1550px] mx-auto ">
