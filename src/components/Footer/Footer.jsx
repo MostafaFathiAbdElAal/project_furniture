@@ -41,7 +41,7 @@ export default function Footer() {
                                 <a aria-label="موقعنا على الخريطة" href="https://maps.app.goo.gl/QimrsfF8j62Qxf2U6" target="_blank" rel="noreferrer"><p className="flex items-center hover:underline"><span className="me-2 text-center text-green-200 dark:text-cyan-200 text-xl"><LocationOnOutlinedIcon fontSize="inherit" /></span>Riyadh-Saudi Arabia</p> </a>
                             </li>
                             <li className="w-fit">
-                                <a aria-label="الاتصال بنا هاتفيا" href="tel:+966542683288" target="_blank" rel="noreferrer"><p className="flex items-center hover:underline tracking-tight"><span className="me-2 text-center text-green-200 dark:text-cyan-200 text-xl mb-1"><SmartphoneOutlinedIcon fontSize="inherit" /></span>966542683288+</p></a>
+                                <a aria-label="الاتصال بنا هاتفيا" href="tel:+966543824038" target="_blank" rel="noreferrer"><p className="flex items-center hover:underline tracking-tight"><span className="me-2 text-center text-green-200 dark:text-cyan-200 text-xl mb-1"><SmartphoneOutlinedIcon fontSize="inherit" /></span>966543824038+</p></a>
                             </li>
                             <li className="w-fit">
                                 <a aria-label="التواصل معنا واتس اب" href="https://api.whatsapp.com/send/?phone=966508137522&text&app_absent=0" target="_blank" rel="noreferrer"><p className="flex items-center hover:underline"><span className="me-2 text-center text-green-200 dark:text-cyan-200 text-xl mb-1"><WhatsAppIcon fontSize="inherit" /></span>966508137522+</p></a>

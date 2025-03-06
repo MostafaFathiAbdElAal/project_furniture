@@ -21,7 +21,7 @@ export default function FormRequestService() {
             if (useCheckTime()) {
                 useAlertSuccess()
                 sendEmail({
-                    content: `<table>
+                    content: `<table style="margin-left:auto;">
         <tbody>
             <tr>
             <td>${values.Full_Name}</td>
@@ -46,7 +46,7 @@ export default function FormRequestService() {
         </tbody>
         </table>`})
             } else {
-                const timeValid = 5 - (Math.ceil(Date.now() / (1000 * 60)) - Math.ceil(JSON.parse(localStorage.getItem('storedTime')) / (1000 * 60)))
+                const timeValid = 5 - (Math.ceil(Date.now() / (1000 * 60)) - Math.ceil(JSON.parse(localStorage.getItem('submitTime')) / (1000 * 60)))
                 useAlertWarning({ title: "عفوا مسموح لك بالإرسال مجددا بعد ",text:` متبقي من الوقت ${timeValid !== 0 ? timeValid : 30} ${timeValid !== 0 ? " دقائق " : " ثانية "}لإعادة الإرسال` })
             }
         }

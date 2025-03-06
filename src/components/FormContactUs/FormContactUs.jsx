@@ -24,7 +24,7 @@ export default function FormContactUs() {
         if (useCheckTime()) {
             useAlertSuccess()
             sendEmail({
-                content: `<table>
+                content: `<table style="margin-left:auto;">
     <tbody>
         <tr>
         <td>${values.Full_Name}</td>
@@ -41,7 +41,7 @@ export default function FormContactUs() {
     </tbody>
     </table>`})
         } else {
-            const timeValid = 5 - (Math.ceil(Date.now() / (1000 * 60)) - Math.ceil(JSON.parse(localStorage.getItem('storedTime')) / (1000 * 60)))
+            const timeValid = 5 - (Math.round(Date.now() / (1000 * 60)) - Math.round(JSON.parse(localStorage.getItem('submitTime')) / (1000 * 60)))
             useAlertWarning({ title: "عفوا مسموح لك بالإرسال مجددا بعد ", text: ` متبقي من الوقت ${timeValid !== 0 ? timeValid : 30} ${timeValid !== 0 ? " دقائق " : " ثانية "}لإعادة الإرسال` })
         }
     }
@@ -77,7 +77,7 @@ export default function FormContactUs() {
                 {Formik.errors.Phone_Number && Formik.touched.Phone_Number ? <Alert variant="outlined" severity="error" style={{ padding: 0 }} className="flex items-center gap-1 mt-1" ><span className="text-sm font-bold font-cairo">{Formik.errors.Phone_Number}</span></Alert> : null}
                 <span className="absolute z-10 top-[33px] text-white left-[6px]"><LocalPhoneOutlinedIcon /></span>
             </div>
-            <div>
+            <div> 
                 <div className="relative">
                     <p className="mb-1 mr-1 text-sm text-[#d7d7d7]">العنوان :</p>
                     <textarea placeholder="العنوان بالتفصيل" className={`bg-[#222831] text-[#f1f1f1] border-0 p-2  focus:outline-none  transition ease-in-out duration-150 w-full resize-none  pb-10 pl-8`} name="Address" rows={8} maxLength={200} value={Formik.values.Address} onChange={(e) => {
