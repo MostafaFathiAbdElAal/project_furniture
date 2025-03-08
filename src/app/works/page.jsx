@@ -6,12 +6,12 @@ import imageService4 from "@/images/image3.jpg";
 import imageService3 from "@/images/Safe packaging service.jpg";
 import imageService2 from "@/images/images7.jpg";
 export const metadata = {
-    title: "خدماتنا - التميز لنقل العفش",
+    title: "خدمات - التميز لنقل العفش",
     description: "نقدم لك خدمة نقل عفش آمنة وسريعة مع شركة التمييز لنقل العفش داخل وخارج الرياض باستخدام شاحنات مجهزة بمعدات حديثة لضمان سلامة الأثاث.",
     openGraph: {
-        title: "خدماتنا - التميز لنقل العفش",
+        title: "خدمات - التميز لنقل العفش",
         description: "نقدم لك خدمة نقل عفش آمنة وسريعة مع شركة التمييز لنقل العفش داخل وخارج الرياض باستخدام شاحنات مجهزة بمعدات حديثة لضمان سلامة الأثاث.",
-        url: "https://www.tamez-furniture.site/our-services",
+        url: "https://www.tamez-furniture.site/works",
     },
 };
 export default function services() {
@@ -25,10 +25,10 @@ export default function services() {
             <section className="grid grid-cols-12 gap-5 px-2 sm:px-5 justify-items-center" >
                 <div className="dark:bg-[#1e293b] bg-white col-span-12 overflow-hidden sm:col-span-6 lg:col-span-4  group relative rounded-md border dark:border-slate-800 border-[#d2d2d2] shadow-sm">
                     <div tabIndex={3} className="card h-full flex flex-col justify-between">
-                        <figure className="h-80 overflow-hidden">
+                        <div className="h-80 overflow-hidden">
                             <Image priority src={imageService1} className="w-full h-full group-hover:scale-110 transition-transform duration-700 object-cover" alt="نقل الأثاث" />
                             <h4 className="w-fit bg-gradient-to-r from-blue-400 to-blue-500 dark:bg-gradient-to-r dark:from-cyan-400 dark:to-sky-500 dark:text-slate-50 absolute left-1/2 translate-x-[-50%] translate-y-[-60%] text-white px-7 py-2  text-xl rounded text-nowrap text-center">النقل</h4>
-                        </figure>
+                        </div>
                         <div className="card-body min-h-52 font-Poppins font-bold">
                             <header className="px-5 ">
                                 <h5 className="pt-5 dark:text-white text-black text-2xl lg:text-3xl text-center">
@@ -97,10 +97,10 @@ export default function services() {
                 </div>
                 <div className="bg-white dark:bg-[#1e293b] overflow-hidden col-span-12 sm:col-span-6 lg:col-span-4  group relative rounded-md border dark:border-slate-800 border-[#d2d2d2] shadow-sm">
                     <div tabIndex={3} className="card h-full flex flex-col justify-between">
-                        <figure className="h-80 overflow-hidden">
+                        <div className="h-80 overflow-hidden">
                             <Image loading={"lazy"} decoding="async" src={imageService3} className="w-full h-full group-hover:scale-110 transition-transform duration-700 object-cover" alt="عمال تغليف" />
                             <h4 className="w-fit bg-gradient-to-r from-blue-400 to-blue-500 dark:bg-gradient-to-r dark:from-cyan-400 dark:to-sky-500 dark:text-slate-50 absolute left-1/2 translate-x-[-50%] translate-y-[-60%] text-white px-7 py-2  text-xl rounded text-nowrap text-center">التغليق الاَمن</h4>
-                        </figure>
+                        </div>
                         <div className="card-body min-h-52 font-Poppins font-bold">
                             <header className="px-5">
                                 <h5 className="pt-5 dark:text-white text-black text-2xl lg:text-3xl text-center">
@@ -133,10 +133,10 @@ export default function services() {
                 </div>
                 <div className="dark:bg-[#1e293b] bg-white col-span-12 sm:col-span-6 lg:col-span-4  relative group rounded-md border dark:border-slate-800 border-[#d2d2d2] shadow-sm overflow-hidden">
                     <div tabIndex={3} className="card h-full flex flex-col justify-between">
-                        <figure className="h-80 overflow-hidden">
+                        <div className="h-80 overflow-hidden">
                             <Image loading={"lazy"} decoding="async" src={imageService4} className="w-full h-full group-hover:scale-110 transition-transform duration-700 object-cover" alt="فك وتركيب المكيفات السبلت" />
                             <h4 className="w-fit bg-gradient-to-r from-blue-400 to-blue-500 dark:bg-gradient-to-r dark:from-cyan-400 dark:to-sky-500 dark:text-slate-50 absolute left-1/2 translate-x-[-50%] translate-y-[-60%] text-white px-7 py-2 text-nowrap text-center text-xl rounded">فك وتركيب مكيفات السبلت</h4>
-                        </figure>
+                        </div>
                         <div className="card-body min-h-52 font-Poppins font-bold">
                             <header className="px-5 ">
                                 <h5 className="pt-5 dark:text-white text-black text-2xl lg:text-3xl text-center">

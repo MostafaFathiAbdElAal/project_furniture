@@ -27,9 +27,9 @@ export default function Home() {
         </div>
         <div className="col-span-12 md:col-span-5 self-center justify-self-center select-none">
           <div className="relative hidden sm:block">
-            <figure className="max-h-72 max-w-72 relative rounded-lg overflow-hidden after:bg-black after:bg-opacity-20 after:absolute after:top-0 after:bottom-0 after:w-full">
+            <div className="max-h-72 max-w-72 relative rounded-lg overflow-hidden after:bg-black after:bg-opacity-20 after:absolute after:top-0 after:bottom-0 after:w-full">
               <Image src={image1} className="w-full h-full object-cover" alt="نقل الأثاث" priority />
-            </figure>
+            </div>
             <article className="absolute p-3 top-10 -right-16 bg-[#fcfdff] dark:bg-[rgb(8,21,49)] dark:text-white rounded-md grid grid-cols-12 items-center gap-2">
               <span className="col-span-3 text-xl text-[#68ccea] dark:text-[rgb(150,226,249)]">
                 10
@@ -45,9 +45,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <figure className="absolute top-0 bottom-0 w-full flex flex-col justify-center select-none items-center after:bg-black after:bg-opacity-60 after:absolute after:top-0 after:bottom-0 after:w-full  ">
+      <div className="absolute top-0 bottom-0 w-full flex flex-col justify-center select-none items-center after:bg-black after:bg-opacity-60 after:absolute after:top-0 after:bottom-0 after:w-full  ">
         <Image src={homeBackground} className="w-full h-full object-cover object-center " alt="أثاث رائع" priority />
-      </figure>
+      </div>
     </section>
     <section className="dark:bg-[#080c14] bg-[#ededed] p-5  font-cairo font-bold text-lg sm:text-xl md:text-xl">
       <div className="shadow-2xl dark:bg-white dark:bg-opacity-5 overflow-hidden bg-white p-3 md:p-5 ">
