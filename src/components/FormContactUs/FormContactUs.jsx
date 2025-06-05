@@ -12,7 +12,7 @@ import { useCheckTime } from "@/hooks/checkTime/checkTime";
 export default function FormContactUs() {
     const [countDown, setCountDown] = useState(300)
     const phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/
-    // Validation Schema
+    // Validation Schemaض
     const validationSchema = Yup.object({
         Full_Name: Yup.string().required("لا يمكن ترك الحقل فارغاً").min(10, "الحد الأدنى عشر حروف").max(40, "الحد الأقصى أربعين حرف"),
         Phone_Number: Yup.string().required("لا يمكن ترك الحقل فارغاً").matches(phoneRegex, "برجاء إدحال رقم هاتف صالح"),

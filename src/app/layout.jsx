@@ -6,6 +6,7 @@ import "./globals.css";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import CardWarning from "@/components/CardWarning/CardWarning";
 export const viewport = {
   themeColor: '#2E088FE8',
 }
@@ -21,6 +22,10 @@ export default function RootLayout({ children }) {
     <html dir="rtl" lang="ar" className="dark">
       <body>
         {<Navbar />}
+        <div className="backdrop-blur-md fixed flex items-center justify-center z-[99999999999999999999] top-0 bottom-0 left-0 right-0">
+
+        <CardWarning/>
+        </div>
         <main className="max-w-[1550px] mx-auto ">
           <a aria-label="راسلنا على الواتس اب" tabIndex={0} href="https://api.whatsapp.com/send/?phone=966508137522&text&app_absent=0" target="_blank" rel="noreferrer" className="z-50 w-12 h-12 2xl:h-20 2xl:w-20 dark:bg-[#075E54] bg-[#25D366] bg-opacity-85 dark:bg-opacity-85 dark:hover:bg-opacity-100 hover:bg-opacity-100 transition-colors duration-300 fixed bottom-9 right-3 flex justify-center items-center rounded-full">
             <span className="text-white fa-brands fa-whatsapp text-3xl 2xl:text-5xl"></span>
